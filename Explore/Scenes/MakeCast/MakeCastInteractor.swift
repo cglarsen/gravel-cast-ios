@@ -26,6 +26,12 @@ class MakeCastInteractor: MakeCastDataStore {
 
 extension MakeCastInteractor: MakeCastBusinessLogic {
     func fetchStravaRoute(with id: String) {
-        worker.fetchRoute(with: id)
+        worker.fetchRoute(with: id) { (route) in
+            if let route = route {
+                self.presenter?.present(stravaRoute: route)
+            } else {
+                self.presenter?.presentError(messange: "Route not downloadable")
+            }
+        }
     }
 }

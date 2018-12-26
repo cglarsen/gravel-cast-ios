@@ -10,8 +10,11 @@
 //
 
 import UIKit
+import MapKit
 
 protocol MakeCastDisplayLogic: class {
+    func display(stravaRoute: StravaRoute)
+    func displayError(message: String)
 }
 
 class MakeCastViewController: UIViewController {
@@ -22,10 +25,25 @@ class MakeCastViewController: UIViewController {
             stravaRouteIdTextField.text = "16534173"
         }
     }
+    @IBOutlet weak var mapView: MKMapView! { didSet {
+            mapView.isHidden = true
+            mapView.delegate = self
+        }
+    }
+    
+    @IBOutlet weak var goButton: UIButton!
+    @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView! {
+        didSet {
+            activityIndicator.isHidden = true
+        }
+    }
     
     // MARK: - Properties
     var interactor: MakeCastBusinessLogic?
     var router: (NSObjectProtocol & MakeCastRoutingLogic & MakeCastDataPassing)?
+    
+    var routeOverlay: MKOverlay?
     
     // MARK: - Init
     class func instantiate() -> MakeCastViewController {
@@ -59,7 +77,16 @@ class MakeCastViewController: UIViewController {
     @IBAction func goPressed(_ sender: Any) {
         if let idString = stravaRouteIdTextField.text, !idString.isEmpty {
             interactor?.fetchStravaRoute(with: idString)
+            self.view.endEditing(true)
+            activityIndicator.isHidden = false
+            activityIndicator.startAnimating()
+            goButton.isHidden = true
+            
+        } else {
+            errorLabel.isHidden = false
+            errorLabel.text = "Skriv et strava route id"
         }
+        
     }
     
     // MARK: - Misc
@@ -67,5 +94,41 @@ class MakeCastViewController: UIViewController {
 
 // MARK: - MakeCastDisplayLogic
 extension MakeCastViewController: MakeCastDisplayLogic {
+    func display(stravaRoute: StravaRoute) {
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
+        goButton.isHidden = false
+        mapView.isHidden = false
+        errorLabel.isHidden = true
+        
+        mapView.removeOverlays(mapView.overlays)
+        
+        let points: [CLLocationCoordinate2D] = stravaRoute.coordinates.map { (coor) -> CLLocationCoordinate2D in
+            return CLLocationCoordinate2D(latitude: Double(coor.lat)!, longitude: Double(coor.lon)!)
+        }
+        
+        let routePolyline = MKPolyline(coordinates: points, count: points.count)
+        mapView.addOverlay(routePolyline)
+        mapView.setVisibleMapRect(routePolyline.boundingMapRect, animated: true)
+    }
     
+    func displayError(message: String) {
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
+        goButton.isHidden = false
+        mapView.isHidden = true
+        errorLabel.isHidden = false
+        errorLabel.text = message
+    }
+}
+
+
+extension MakeCastViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let renderer = MKPolylineRenderer(overlay: overlay)
+        renderer.strokeColor = .primaryColor
+        renderer.lineWidth = 3.0
+        
+        return renderer
+    }
 }

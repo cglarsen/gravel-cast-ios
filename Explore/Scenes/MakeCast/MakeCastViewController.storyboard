@@ -41,20 +41,44 @@
                                     <action selector="goPressed:" destination="F2H-rH-Lsj" eventType="touchUpInside" id="g2d-yj-qgb"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="JXW-0A-IiJ">
+                                <rect key="frame" x="169" y="77" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QDI-C2-8Ee">
+                                <rect key="frame" x="0.0" y="117" width="375" height="550"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOl-TR-J9s">
+                                <rect key="frame" x="187.5" y="392" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.33817503570000002" blue="0.28854662450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Fhz-5B-qaF" firstAttribute="bottom" secondItem="QDI-C2-8Ee" secondAttribute="bottom" id="4Iz-Ro-Kie"/>
                             <constraint firstItem="VeB-hD-LNw" firstAttribute="centerY" secondItem="O0U-jU-gxw" secondAttribute="centerY" id="7z2-fg-mga"/>
+                            <constraint firstItem="Fhz-5B-qaF" firstAttribute="trailing" secondItem="QDI-C2-8Ee" secondAttribute="trailing" id="AnQ-cF-vKe"/>
+                            <constraint firstItem="KOl-TR-J9s" firstAttribute="centerY" secondItem="QDI-C2-8Ee" secondAttribute="centerY" id="FIY-sA-KRo"/>
                             <constraint firstItem="glJ-Dc-FvP" firstAttribute="top" secondItem="Fhz-5B-qaF" secondAttribute="top" constant="20" id="HSy-ua-nDN"/>
                             <constraint firstItem="O0U-jU-gxw" firstAttribute="leading" secondItem="glJ-Dc-FvP" secondAttribute="leading" id="QzM-pw-YQG"/>
                             <constraint firstItem="O0U-jU-gxw" firstAttribute="top" secondItem="glJ-Dc-FvP" secondAttribute="bottom" constant="10" id="WXA-qg-I9K"/>
+                            <constraint firstItem="QDI-C2-8Ee" firstAttribute="top" secondItem="O0U-jU-gxw" secondAttribute="bottom" constant="10" id="ZcH-RV-oRU"/>
+                            <constraint firstItem="JXW-0A-IiJ" firstAttribute="centerY" secondItem="VeB-hD-LNw" secondAttribute="centerY" id="alE-f9-jth"/>
                             <constraint firstItem="Fhz-5B-qaF" firstAttribute="trailing" secondItem="glJ-Dc-FvP" secondAttribute="trailing" constant="15" id="fsU-d1-GUY"/>
+                            <constraint firstItem="KOl-TR-J9s" firstAttribute="centerX" secondItem="QDI-C2-8Ee" secondAttribute="centerX" id="iH6-Xu-fDi"/>
+                            <constraint firstItem="JXW-0A-IiJ" firstAttribute="centerX" secondItem="VeB-hD-LNw" secondAttribute="centerX" id="jMo-YC-Evj"/>
                             <constraint firstItem="glJ-Dc-FvP" firstAttribute="leading" secondItem="Fhz-5B-qaF" secondAttribute="leading" constant="15" id="r11-T2-cKd"/>
+                            <constraint firstItem="QDI-C2-8Ee" firstAttribute="leading" secondItem="Fhz-5B-qaF" secondAttribute="leading" id="sB7-g5-Pon"/>
                             <constraint firstItem="VeB-hD-LNw" firstAttribute="leading" secondItem="O0U-jU-gxw" secondAttribute="trailing" constant="9" id="yDz-n9-b00"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Fhz-5B-qaF"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="JXW-0A-IiJ" id="JJd-TT-mOO"/>
+                        <outlet property="errorLabel" destination="KOl-TR-J9s" id="bO4-sY-qIA"/>
+                        <outlet property="goButton" destination="VeB-hD-LNw" id="fL8-EY-nUa"/>
+                        <outlet property="mapView" destination="QDI-C2-8Ee" id="zTZ-Vn-yoL"/>
                         <outlet property="stravaRouteIdTextField" destination="O0U-jU-gxw" id="DDA-bg-knA"/>
                     </connections>
                 </viewController>

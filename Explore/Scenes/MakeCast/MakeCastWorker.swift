@@ -18,18 +18,17 @@ class MakeCastWorker {
         self.stravaService = stravaService
     }
     
-    func fetchRoute(with id: String) {
+    func fetchRoute(with id: String, completion: @escaping (StravaRoute?) -> Void) {
         stravaService.getRoute(for: id) { response in
             switch response.result {
             case .success(let gxpString):
                 print("This is the gxp string: \(gxpString)")
                 let parser = MyParser(xml: gxpString)
-                if let route = parser.parseXML()  {
-                    print("Route has \(route.route.count) coordinates")
-                }
-                
+                let route = parser.parseXML()
+                completion(route)
             case .failure(_):
                 print("Strava route failed!")
+                completion(nil)
             }
         }
     }

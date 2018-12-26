@@ -12,7 +12,8 @@
 import UIKit
 
 protocol MakeCastPresentationLogic {
-    
+    func present(stravaRoute: StravaRoute)
+    func presentError(messange: String)
 }
 
 class MakeCastPresenter {
@@ -20,5 +21,12 @@ class MakeCastPresenter {
 }
 
 extension MakeCastPresenter: MakeCastPresentationLogic {
+    func present(stravaRoute: StravaRoute) {
+        viewController?.display(stravaRoute: stravaRoute)
+    }
+    
+    func presentError(messange: String) {
+        
+    }
     
 }
