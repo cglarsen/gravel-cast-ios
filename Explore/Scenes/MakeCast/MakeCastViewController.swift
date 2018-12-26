@@ -17,6 +17,11 @@ protocol MakeCastDisplayLogic: class {
 class MakeCastViewController: UIViewController {
     
     // MARK: - Outlets
+    @IBOutlet weak var stravaRouteIdTextField: UITextField! {
+        didSet {
+            stravaRouteIdTextField.text = "16534173"
+        }
+    }
     
     // MARK: - Properties
     var interactor: MakeCastBusinessLogic?
@@ -51,6 +56,11 @@ class MakeCastViewController: UIViewController {
     }
     
     // MARK: - Actions
+    @IBAction func goPressed(_ sender: Any) {
+        if let idString = stravaRouteIdTextField.text, !idString.isEmpty {
+            interactor?.fetchStravaRoute(with: idString)
+        }
+    }
     
     // MARK: - Misc
 }

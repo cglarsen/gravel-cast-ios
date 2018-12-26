@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		330A251421D38A750042B901 /* ServerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A251321D38A750042B901 /* ServerRepository.swift */; };
+		330A251621D38D650042B901 /* StravaServerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A251521D38D650042B901 /* StravaServerRepository.swift */; };
+		330A251821D38D9D0042B901 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A251721D38D9D0042B901 /* Constants.swift */; };
+		330A251E21D38F4F0042B901 /* Serpent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330A251A21D38F4F0042B901 /* Serpent.framework */; };
+		330A251F21D38F4F0042B901 /* Cashier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330A251B21D38F4F0042B901 /* Cashier.framework */; };
+		330A252021D38F4F0042B901 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330A251C21D38F4F0042B901 /* Alamofire.framework */; };
+		330A252121D38F4F0042B901 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330A251D21D38F4F0042B901 /* SnapKit.framework */; };
+		330A252421D39F920042B901 /* StravaRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A252321D39F920042B901 /* StravaRoute.swift */; };
 		338D13E421C65F3F0065BB8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338D13E321C65F3F0065BB8D /* AppDelegate.swift */; };
 		338D13EB21C65F410065BB8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 338D13EA21C65F410065BB8D /* Assets.xcassets */; };
 		338D13EE21C65F410065BB8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338D13EC21C65F410065BB8D /* LaunchScreen.storyboard */; };
@@ -48,6 +56,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		330A251321D38A750042B901 /* ServerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRepository.swift; sourceTree = "<group>"; };
+		330A251521D38D650042B901 /* StravaServerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaServerRepository.swift; sourceTree = "<group>"; };
+		330A251721D38D9D0042B901 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		330A251A21D38F4F0042B901 /* Serpent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Serpent.framework; path = Explore/Carthage/Build/iOS/Serpent.framework; sourceTree = "<group>"; };
+		330A251B21D38F4F0042B901 /* Cashier.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cashier.framework; path = Explore/Carthage/Build/iOS/Cashier.framework; sourceTree = "<group>"; };
+		330A251C21D38F4F0042B901 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Explore/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		330A251D21D38F4F0042B901 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Explore/Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		330A252321D39F920042B901 /* StravaRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaRoute.swift; sourceTree = "<group>"; };
 		338D13E021C65F3F0065BB8D /* Explore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Explore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		338D13E321C65F3F0065BB8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		338D13EA21C65F410065BB8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,15 +111,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				330A251F21D38F4F0042B901 /* Cashier.framework in Frameworks */,
+				330A252021D38F4F0042B901 /* Alamofire.framework in Frameworks */,
+				330A251E21D38F4F0042B901 /* Serpent.framework in Frameworks */,
+				330A252121D38F4F0042B901 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		330A251921D38F350042B901 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				330A251C21D38F4F0042B901 /* Alamofire.framework */,
+				330A251B21D38F4F0042B901 /* Cashier.framework */,
+				330A251A21D38F4F0042B901 /* Serpent.framework */,
+				330A251D21D38F4F0042B901 /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		338D13D721C65F3F0065BB8D = {
 			isa = PBXGroup;
 			children = (
+				330A251921D38F350042B901 /* Frameworks */,
 				338D13E221C65F3F0065BB8D /* Explore */,
 				338D13E121C65F3F0065BB8D /* Products */,
 			);
@@ -138,6 +170,7 @@
 				338D140C21C66AF10065BB8D /* Cast.swift */,
 				338D140E21C66EE50065BB8D /* Discovery.swift */,
 				338D141021C6707A0065BB8D /* SoundClip.swift */,
+				330A252321D39F920042B901 /* StravaRoute.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,6 +209,8 @@
 			children = (
 				338D13FA21C660B70065BB8D /* Repository.swift */,
 				338D140A21C66A800065BB8D /* MockRepository.swift */,
+				330A251321D38A750042B901 /* ServerRepository.swift */,
+				330A251521D38D650042B901 /* StravaServerRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -219,6 +254,7 @@
 			children = (
 				33DC7FDF21CBE75200F5C736 /* Extensions.swift */,
 				33EF343821D23B1B0019F64E /* Colors.swift */,
+				330A251721D38D9D0042B901 /* Constants.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -226,13 +262,13 @@
 		33E1BAE021D27C45002E23AE /* Explore */ = {
 			isa = PBXGroup;
 			children = (
-				33E1BAE121D27C45002E23AE /* ExploreViewController.storyboard */,
-				33E1BAE221D27C45002E23AE /* ExploreViewController.swift */,
+				33E1BAE621D27C45002E23AE /* ExploreModels.swift */,
+				33E1BAE521D27C45002E23AE /* ExploreRouter.swift */,
 				33E1BAE321D27C45002E23AE /* ExploreInteractor.swift */,
 				33E1BAE421D27C45002E23AE /* ExploreWorker.swift */,
-				33E1BAE521D27C45002E23AE /* ExploreRouter.swift */,
-				33E1BAE621D27C45002E23AE /* ExploreModels.swift */,
 				33E1BAE721D27C45002E23AE /* ExplorePresenter.swift */,
+				33E1BAE221D27C45002E23AE /* ExploreViewController.swift */,
+				33E1BAE121D27C45002E23AE /* ExploreViewController.storyboard */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -248,13 +284,13 @@
 		33E1BAF221D27C88002E23AE /* MakeCast */ = {
 			isa = PBXGroup;
 			children = (
-				33E1BAF321D27CB1002E23AE /* MakeCastPresenter.swift */,
-				33E1BAF421D27CB1002E23AE /* MakeCastWorker.swift */,
-				33E1BAF521D27CB1002E23AE /* MakeCastRouter.swift */,
-				33E1BAF621D27CB1002E23AE /* MakeCastViewController.storyboard */,
 				33E1BAF721D27CB1002E23AE /* MakeCastModels.swift */,
-				33E1BAF821D27CB1002E23AE /* MakeCastViewController.swift */,
+				33E1BAF521D27CB1002E23AE /* MakeCastRouter.swift */,
 				33E1BAF921D27CB1002E23AE /* MakeCastInteractor.swift */,
+				33E1BAF421D27CB1002E23AE /* MakeCastWorker.swift */,
+				33E1BAF321D27CB1002E23AE /* MakeCastPresenter.swift */,
+				33E1BAF821D27CB1002E23AE /* MakeCastViewController.swift */,
+				33E1BAF621D27CB1002E23AE /* MakeCastViewController.storyboard */,
 			);
 			path = MakeCast;
 			sourceTree = "<group>";
@@ -269,6 +305,7 @@
 				338D13DC21C65F3F0065BB8D /* Sources */,
 				338D13DD21C65F3F0065BB8D /* Frameworks */,
 				338D13DE21C65F3F0065BB8D /* Resources */,
+				330A252221D38F6C0042B901 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -336,6 +373,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		330A252221D38F6C0042B901 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Explore/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Explore/Carthage/Build/iOS/Serpent.framework",
+				"$(SRCROOT)/Explore/Carthage/Build/iOS/Cashier.framework",
+				"$(SRCROOT)/Explore/Carthage/Build/iOS/SnapKit.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Serpent.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Cashier.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		338D13DC21C65F3F0065BB8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -348,6 +414,7 @@
 				338D140B21C66A800065BB8D /* MockRepository.swift in Sources */,
 				33E1BAEC21D27C45002E23AE /* ExploreInteractor.swift in Sources */,
 				33E1BAF021D27C45002E23AE /* ExplorePresenter.swift in Sources */,
+				330A251821D38D9D0042B901 /* Constants.swift in Sources */,
 				33E1BAEE21D27C45002E23AE /* ExploreRouter.swift in Sources */,
 				33DC7FDC21CBE46A00F5C736 /* CastCell.swift in Sources */,
 				338D140D21C66AF10065BB8D /* Cast.swift in Sources */,
@@ -366,9 +433,12 @@
 				338D140F21C66EE50065BB8D /* Discovery.swift in Sources */,
 				33DC7FE021CBE75200F5C736 /* Extensions.swift in Sources */,
 				338D141121C6707A0065BB8D /* SoundClip.swift in Sources */,
+				330A251621D38D650042B901 /* StravaServerRepository.swift in Sources */,
 				33DC7FD421CBE36B00F5C736 /* ListCastsRouter.swift in Sources */,
+				330A252421D39F920042B901 /* StravaRoute.swift in Sources */,
 				33DC7FD221CBE36B00F5C736 /* ListCastsPresenter.swift in Sources */,
 				33DC7FD821CBE36B00F5C736 /* ListCastsInteractor.swift in Sources */,
+				330A251421D38A750042B901 /* ServerRepository.swift in Sources */,
 				338D141A21C739830065BB8D /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +579,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconTest;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3F968TK478;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Explore/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Explore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -528,6 +602,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconTest;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3F968TK478;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Explore/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Explore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (

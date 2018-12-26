@@ -1,24 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--scene Name View Controller-->
+        <!--Make Cast View Controller-->
         <scene sceneID="i0m-iF-p80">
             <objects>
-                <viewController storyboardIdentifier="MakeCastViewController" id="F2H-rH-Lsj" customClass="MakeCastViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MakeCastViewController" id="F2H-rH-Lsj" customClass="MakeCastViewController" customModule="Explore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ev-QE-M02">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add strava route id (route needs to be public)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glJ-Dc-FvP">
+                                <rect key="frame" x="15" y="40" width="345" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O0U-jU-gxw">
+                                <rect key="frame" x="15" y="67" width="140" height="40"/>
+                                <color key="backgroundColor" red="0.2156862745" green="0.16862745100000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PJq-3Z-ZZ4"/>
+                                    <constraint firstAttribute="width" constant="140" id="uwv-mL-php"/>
+                                </constraints>
+                                <color key="textColor" red="0.32156862749999998" green="0.97647058819999999" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeB-hD-LNw">
+                                <rect key="frame" x="164" y="72" width="30" height="30"/>
+                                <state key="normal" title="GO"/>
+                                <connections>
+                                    <action selector="goPressed:" destination="F2H-rH-Lsj" eventType="touchUpInside" id="g2d-yj-qgb"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VeB-hD-LNw" firstAttribute="centerY" secondItem="O0U-jU-gxw" secondAttribute="centerY" id="7z2-fg-mga"/>
+                            <constraint firstItem="glJ-Dc-FvP" firstAttribute="top" secondItem="Fhz-5B-qaF" secondAttribute="top" constant="20" id="HSy-ua-nDN"/>
+                            <constraint firstItem="O0U-jU-gxw" firstAttribute="leading" secondItem="glJ-Dc-FvP" secondAttribute="leading" id="QzM-pw-YQG"/>
+                            <constraint firstItem="O0U-jU-gxw" firstAttribute="top" secondItem="glJ-Dc-FvP" secondAttribute="bottom" constant="10" id="WXA-qg-I9K"/>
+                            <constraint firstItem="Fhz-5B-qaF" firstAttribute="trailing" secondItem="glJ-Dc-FvP" secondAttribute="trailing" constant="15" id="fsU-d1-GUY"/>
+                            <constraint firstItem="glJ-Dc-FvP" firstAttribute="leading" secondItem="Fhz-5B-qaF" secondAttribute="leading" constant="15" id="r11-T2-cKd"/>
+                            <constraint firstItem="VeB-hD-LNw" firstAttribute="leading" secondItem="O0U-jU-gxw" secondAttribute="trailing" constant="9" id="yDz-n9-b00"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Fhz-5B-qaF"/>
                     </view>
+                    <connections>
+                        <outlet property="stravaRouteIdTextField" destination="O0U-jU-gxw" id="DDA-bg-knA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FyU-Lz-LgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

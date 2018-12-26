@@ -12,6 +12,7 @@
 import UIKit
 
 protocol MakeCastBusinessLogic {
+    func fetchStravaRoute(with id: String)
 }
 
 protocol MakeCastDataStore {
@@ -20,9 +21,11 @@ protocol MakeCastDataStore {
 
 class MakeCastInteractor: MakeCastDataStore {
     var presenter: MakeCastPresentationLogic?
-    var worker: MakeCastWorker?
+    var worker = MakeCastWorker(stravaService: StravaServerRepository())
 }
 
 extension MakeCastInteractor: MakeCastBusinessLogic {
-    
+    func fetchStravaRoute(with id: String) {
+        worker.fetchRoute(with: id)
+    }
 }

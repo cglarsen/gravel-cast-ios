@@ -12,5 +12,25 @@
 import UIKit
 
 class MakeCastWorker {
+    let stravaService: StravaService
     
+    init(stravaService: StravaService) {
+        self.stravaService = stravaService
+    }
+    
+    func fetchRoute(with id: String) {
+        stravaService.getRoute(for: id) { response in
+            switch response.result {
+            case .success(let gxpString):
+                print("This is the gxp string: \(gxpString)")
+                let parser = MyParser(xml: gxpString)
+                if let route = parser.parseXML()  {
+                    print("Route has \(route.route.count) coordinates")
+                }
+                
+            case .failure(_):
+                print("Strava route failed!")
+            }
+        }
+    }
 }
