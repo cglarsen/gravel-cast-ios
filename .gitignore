@@ -55,3 +55,6 @@ fastlane/test_output
 
 # Mac related
 .DS_Store
+
+# Specific
+Constants.swift
