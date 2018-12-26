@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List Casts View Controller-->
+        <scene sceneID="i0m-iF-p80">
+            <objects>
+                <viewController storyboardIdentifier="ListCastsViewController" id="F2H-rH-Lsj" customClass="ListCastsViewController" customModule="Explore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ev-QE-M02">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TMs-f1-E3W">
+                                <rect key="frame" x="0.0" y="130" width="375" height="537"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GravelCast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bav-4l-2bh">
+                                <rect key="frame" x="79.5" y="45" width="216.5" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="50"/>
+                                <color key="textColor" red="0.32156862749999998" green="0.97647058819999999" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21568627450980393" green="0.16862745098039217" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fhz-5B-qaF" firstAttribute="bottom" secondItem="TMs-f1-E3W" secondAttribute="bottom" id="1a2-xy-Hch"/>
+                            <constraint firstItem="Fhz-5B-qaF" firstAttribute="trailing" secondItem="TMs-f1-E3W" secondAttribute="trailing" id="6oA-DS-qc4"/>
+                            <constraint firstItem="TMs-f1-E3W" firstAttribute="top" secondItem="Bav-4l-2bh" secondAttribute="bottom" constant="25" id="BtL-YJ-9Ig"/>
+                            <constraint firstItem="Bav-4l-2bh" firstAttribute="top" secondItem="Fhz-5B-qaF" secondAttribute="top" constant="25" id="JGt-eY-hji"/>
+                            <constraint firstItem="TMs-f1-E3W" firstAttribute="leading" secondItem="Fhz-5B-qaF" secondAttribute="leading" id="ucC-5u-gOy"/>
+                            <constraint firstItem="Bav-4l-2bh" firstAttribute="centerX" secondItem="Fhz-5B-qaF" secondAttribute="centerX" id="yn3-l2-GN0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fhz-5B-qaF"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="TMs-f1-E3W" id="iyC-09-ukH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FyU-Lz-LgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7.2000000000000002" y="146.17691154422789"/>
+        </scene>
+    </scenes>
+</document>
