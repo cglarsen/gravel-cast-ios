@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Show Cast View Controller-->
+        <scene sceneID="i0m-iF-p80">
+            <objects>
+                <viewController storyboardIdentifier="ShowCastViewController" id="F2H-rH-Lsj" customClass="ShowCastViewController" customModule="Explore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ev-QE-M02">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="82r-jb-dMV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QB6-Uy-ThS">
+                                <rect key="frame" x="0.0" y="225" width="375" height="442"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fhz-5B-qaF" firstAttribute="trailing" secondItem="82r-jb-dMV" secondAttribute="trailing" id="2sR-Nk-14Q"/>
+                            <constraint firstItem="82r-jb-dMV" firstAttribute="leading" secondItem="Fhz-5B-qaF" secondAttribute="leading" id="3nY-ua-LOg"/>
+                            <constraint firstItem="82r-jb-dMV" firstAttribute="top" secondItem="2ev-QE-M02" secondAttribute="top" id="Aa4-sN-wz6"/>
+                            <constraint firstItem="Fhz-5B-qaF" firstAttribute="bottom" secondItem="QB6-Uy-ThS" secondAttribute="bottom" id="FOu-in-HMg"/>
+                            <constraint firstItem="82r-jb-dMV" firstAttribute="height" secondItem="2ev-QE-M02" secondAttribute="height" multiplier="0.33" id="MHs-rH-ugT"/>
+                            <constraint firstItem="QB6-Uy-ThS" firstAttribute="top" secondItem="82r-jb-dMV" secondAttribute="bottom" constant="5" id="c9M-iy-6A3"/>
+                            <constraint firstItem="Fhz-5B-qaF" firstAttribute="trailing" secondItem="QB6-Uy-ThS" secondAttribute="trailing" id="eOW-rQ-Sf8"/>
+                            <constraint firstItem="QB6-Uy-ThS" firstAttribute="leading" secondItem="Fhz-5B-qaF" secondAttribute="leading" id="rkq-P5-294"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fhz-5B-qaF"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="82r-jb-dMV" id="xev-7H-90U"/>
+                        <outlet property="pageViewControllerHolderView" destination="QB6-Uy-ThS" id="qzb-V4-Pir"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FyU-Lz-LgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7" y="147"/>
+        </scene>
+    </scenes>
+</document>

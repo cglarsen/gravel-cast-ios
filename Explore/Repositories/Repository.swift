@@ -13,6 +13,7 @@ import Alamofire
 protocol CastService {
     func getCasts(completion: @escaping ([Cast]) -> Void)
     func getCast(with id: String, completion: @escaping (Cast) -> Void)
+    func getTestCast(completion: @escaping (Cast) -> Void)
     func castCompleted()
 }
 

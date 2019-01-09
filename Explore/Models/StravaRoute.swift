@@ -44,6 +44,12 @@ class MyParser: NSObject {
         parser.delegate = self
     }
     
+    init(url: URL) {
+        parser = XMLParser(contentsOf: url)!
+        super.init()
+        parser.delegate = self
+    }
+    
     func parseXML() -> StravaRoute? {
         parser.parse()
         return route

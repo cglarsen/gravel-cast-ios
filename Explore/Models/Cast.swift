@@ -11,6 +11,9 @@ import Foundation
 struct Cast {
     var id: String
     var name: String
+    var description: String?
+    var imageUrlString: String?
     var region: String
     var discoveryPoints: [Discovery]
+    var stravaRoute: StravaRoute? = nil
 }

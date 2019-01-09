@@ -13,27 +13,31 @@ class MainTabBar: UITabBarController {
     // Navigation Controllers
     let listCastsNavC = UINavigationController()
     let makeCastNavC = UINavigationController()
+    let showCastNavC = UINavigationController()
     
     // Base ViewControllers
     let listCastsVC = ListCastsViewController.instantiate()
     let makeCastVC = MakeCastViewController.instantiate()
+    let showCastVC = ShowCastViewController.instantiate()
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         listCastsNavC.setNavigationBarHidden(true, animated: false)
         makeCastNavC.setNavigationBarHidden(true, animated: false)
+        showCastNavC.setNavigationBarHidden(true, animated: false)
         
         listCastsNavC.setViewControllers([listCastsVC], animated: false)
         makeCastNavC.setViewControllers([makeCastVC], animated: false)
+        showCastNavC.setViewControllers([showCastVC], animated: false)
         
-        viewControllers = [listCastsNavC, makeCastNavC]
+        viewControllers = [listCastsNavC, makeCastNavC, showCastNavC]
 
         tabBar.barTintColor = UIColor.primaryColor
         tabBar.isTranslucent = false
         
-        self.selectedIndex = 2
-        let titles = ["Explore","Make"]
+        self.selectedIndex = 0
+        let titles = ["Explore","Make", "Show"]
     
         for (index, title) in titles.enumerated() {
             self.tabBar.items![index].title = title

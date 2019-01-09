@@ -35,5 +35,4 @@ extension ListCasts.DisplayData {
         var region: String
         var numberOfDiscoveryPoints: Int
     }
-    
 }

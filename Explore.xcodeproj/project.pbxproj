@@ -15,6 +15,10 @@
 		330A252021D38F4F0042B901 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330A251C21D38F4F0042B901 /* Alamofire.framework */; };
 		330A252121D38F4F0042B901 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330A251D21D38F4F0042B901 /* SnapKit.framework */; };
 		330A252421D39F920042B901 /* StravaRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A252321D39F920042B901 /* StravaRoute.swift */; };
+		330FE3D721DD2DF200AA3416 /* ShowDiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330FE3D621DD2DF200AA3416 /* ShowDiscoveryViewController.swift */; };
+		330FE3D921DD2E1700AA3416 /* ShowDiscoveryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330FE3D821DD2E1700AA3416 /* ShowDiscoveryViewController.storyboard */; };
+		330FE3EC21DD369400AA3416 /* nordgrus2018.xml in Resources */ = {isa = PBXBuildFile; fileRef = 330FE3EA21DD369400AA3416 /* nordgrus2018.xml */; };
+		330FE3ED21DD369400AA3416 /* nordgrus2018.xml in Resources */ = {isa = PBXBuildFile; fileRef = 330FE3EB21DD369400AA3416 /* nordgrus2018.xml */; };
 		338D13E421C65F3F0065BB8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338D13E321C65F3F0065BB8D /* AppDelegate.swift */; };
 		338D13EB21C65F410065BB8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 338D13EA21C65F410065BB8D /* Assets.xcassets */; };
 		338D13EE21C65F410065BB8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338D13EC21C65F410065BB8D /* LaunchScreen.storyboard */; };
@@ -27,6 +31,20 @@
 		338D141721C674110065BB8D /* pointB.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 338D141421C674110065BB8D /* pointB.m4a */; };
 		338D141821C674110065BB8D /* pointC.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 338D141521C674110065BB8D /* pointC.m4a */; };
 		338D141A21C739830065BB8D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338D141921C739830065BB8D /* LocationManager.swift */; };
+		33C6CEB821DE1BDC00AA9E64 /* ShowCastModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CEB121DE1BDC00AA9E64 /* ShowCastModels.swift */; };
+		33C6CEB921DE1BDC00AA9E64 /* ShowCastWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CEB221DE1BDC00AA9E64 /* ShowCastWorker.swift */; };
+		33C6CEBA21DE1BDC00AA9E64 /* ShowCastRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CEB321DE1BDC00AA9E64 /* ShowCastRouter.swift */; };
+		33C6CEBB21DE1BDC00AA9E64 /* ShowCastViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C6CEB421DE1BDC00AA9E64 /* ShowCastViewController.storyboard */; };
+		33C6CEBC21DE1BDC00AA9E64 /* ShowCastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CEB521DE1BDC00AA9E64 /* ShowCastViewController.swift */; };
+		33C6CEBD21DE1BDC00AA9E64 /* ShowCastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CEB621DE1BDC00AA9E64 /* ShowCastPresenter.swift */; };
+		33C6CEBE21DE1BDC00AA9E64 /* ShowCastInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CEB721DE1BDC00AA9E64 /* ShowCastInteractor.swift */; };
+		33C6CEC321DF49D700AA9E64 /* graapilevej.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33C6CEC021DF49D700AA9E64 /* graapilevej.jpg */; };
+		33C6CEC421DF49D700AA9E64 /* moeldrupvej.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33C6CEC121DF49D700AA9E64 /* moeldrupvej.jpg */; };
+		33C6CEC521DF49D700AA9E64 /* veloropa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33C6CEC221DF49D700AA9E64 /* veloropa.jpg */; };
+		33C6CEC721DF5BBD00AA9E64 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C6CEC621DF5BBD00AA9E64 /* Kingfisher.framework */; };
+		33C6CED121DF6D5200AA9E64 /* PresentCastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CECD21DF6D5200AA9E64 /* PresentCastViewController.swift */; };
+		33C6CED221DF6D5200AA9E64 /* PresentCastViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C6CECE21DF6D5200AA9E64 /* PresentCastViewController.storyboard */; };
+		33C6CED421DF716100AA9E64 /* nordgrus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33C6CED321DF716100AA9E64 /* nordgrus.jpg */; };
 		33DC7FD221CBE36B00F5C736 /* ListCastsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DC7FCB21CBE36B00F5C736 /* ListCastsPresenter.swift */; };
 		33DC7FD321CBE36B00F5C736 /* ListCastsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DC7FCC21CBE36B00F5C736 /* ListCastsWorker.swift */; };
 		33DC7FD421CBE36B00F5C736 /* ListCastsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DC7FCD21CBE36B00F5C736 /* ListCastsRouter.swift */; };
@@ -64,6 +82,10 @@
 		330A251C21D38F4F0042B901 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Explore/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		330A251D21D38F4F0042B901 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Explore/Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		330A252321D39F920042B901 /* StravaRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaRoute.swift; sourceTree = "<group>"; };
+		330FE3D621DD2DF200AA3416 /* ShowDiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDiscoveryViewController.swift; sourceTree = "<group>"; };
+		330FE3D821DD2E1700AA3416 /* ShowDiscoveryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowDiscoveryViewController.storyboard; sourceTree = "<group>"; };
+		330FE3EA21DD369400AA3416 /* nordgrus2018.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = nordgrus2018.xml; sourceTree = "<group>"; };
+		330FE3EB21DD369400AA3416 /* nordgrus2018.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = nordgrus2018.xml; path = GPX/nordgrus2018.xml; sourceTree = "<group>"; };
 		338D13E021C65F3F0065BB8D /* Explore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Explore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		338D13E321C65F3F0065BB8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		338D13EA21C65F410065BB8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +100,20 @@
 		338D141421C674110065BB8D /* pointB.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pointB.m4a; sourceTree = "<group>"; };
 		338D141521C674110065BB8D /* pointC.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pointC.m4a; sourceTree = "<group>"; };
 		338D141921C739830065BB8D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		33C6CEB121DE1BDC00AA9E64 /* ShowCastModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCastModels.swift; sourceTree = "<group>"; };
+		33C6CEB221DE1BDC00AA9E64 /* ShowCastWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCastWorker.swift; sourceTree = "<group>"; };
+		33C6CEB321DE1BDC00AA9E64 /* ShowCastRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCastRouter.swift; sourceTree = "<group>"; };
+		33C6CEB421DE1BDC00AA9E64 /* ShowCastViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShowCastViewController.storyboard; sourceTree = "<group>"; };
+		33C6CEB521DE1BDC00AA9E64 /* ShowCastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCastViewController.swift; sourceTree = "<group>"; };
+		33C6CEB621DE1BDC00AA9E64 /* ShowCastPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCastPresenter.swift; sourceTree = "<group>"; };
+		33C6CEB721DE1BDC00AA9E64 /* ShowCastInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCastInteractor.swift; sourceTree = "<group>"; };
+		33C6CEC021DF49D700AA9E64 /* graapilevej.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = graapilevej.jpg; sourceTree = "<group>"; };
+		33C6CEC121DF49D700AA9E64 /* moeldrupvej.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moeldrupvej.jpg; sourceTree = "<group>"; };
+		33C6CEC221DF49D700AA9E64 /* veloropa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = veloropa.jpg; sourceTree = "<group>"; };
+		33C6CEC621DF5BBD00AA9E64 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Explore/Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		33C6CECD21DF6D5200AA9E64 /* PresentCastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentCastViewController.swift; sourceTree = "<group>"; };
+		33C6CECE21DF6D5200AA9E64 /* PresentCastViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PresentCastViewController.storyboard; sourceTree = "<group>"; };
+		33C6CED321DF716100AA9E64 /* nordgrus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nordgrus.jpg; sourceTree = "<group>"; };
 		33DC7FCB21CBE36B00F5C736 /* ListCastsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCastsPresenter.swift; sourceTree = "<group>"; };
 		33DC7FCC21CBE36B00F5C736 /* ListCastsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCastsWorker.swift; sourceTree = "<group>"; };
 		33DC7FCD21CBE36B00F5C736 /* ListCastsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCastsRouter.swift; sourceTree = "<group>"; };
@@ -111,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C6CEC721DF5BBD00AA9E64 /* Kingfisher.framework in Frameworks */,
 				330A251F21D38F4F0042B901 /* Cashier.framework in Frameworks */,
 				330A252021D38F4F0042B901 /* Alamofire.framework in Frameworks */,
 				330A251E21D38F4F0042B901 /* Serpent.framework in Frameworks */,
@@ -124,6 +161,7 @@
 		330A251921D38F350042B901 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				33C6CEC621DF5BBD00AA9E64 /* Kingfisher.framework */,
 				330A251C21D38F4F0042B901 /* Alamofire.framework */,
 				330A251B21D38F4F0042B901 /* Cashier.framework */,
 				330A251A21D38F4F0042B901 /* Serpent.framework */,
@@ -132,11 +170,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		330FE3D521DD2D9100AA3416 /* ShowDiscovery */ = {
+			isa = PBXGroup;
+			children = (
+				330FE3D621DD2DF200AA3416 /* ShowDiscoveryViewController.swift */,
+				330FE3D821DD2E1700AA3416 /* ShowDiscoveryViewController.storyboard */,
+			);
+			path = ShowDiscovery;
+			sourceTree = "<group>";
+		};
+		330FE3E921DD369400AA3416 /* GPX */ = {
+			isa = PBXGroup;
+			children = (
+				330FE3EA21DD369400AA3416 /* nordgrus2018.xml */,
+			);
+			path = GPX;
+			sourceTree = "<group>";
+		};
 		338D13D721C65F3F0065BB8D = {
 			isa = PBXGroup;
 			children = (
-				330A251921D38F350042B901 /* Frameworks */,
 				338D13E221C65F3F0065BB8D /* Explore */,
+				330A251921D38F350042B901 /* Frameworks */,
 				338D13E121C65F3F0065BB8D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -178,6 +233,9 @@
 		338D13F621C65F6B0065BB8D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				33C6CECA21DF6D5200AA9E64 /* PresentCast */,
+				33C6CEB021DE1BDC00AA9E64 /* ShowCast */,
+				330FE3D521DD2D9100AA3416 /* ShowDiscovery */,
 				33E1BAE821D27C45002E23AE /* Shared */,
 				33E1BAF221D27C88002E23AE /* MakeCast */,
 				33E1BAE021D27C45002E23AE /* Explore */,
@@ -197,6 +255,9 @@
 		338D13F821C65FC30065BB8D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				33C6CEBF21DF491000AA9E64 /* Images */,
+				330FE3E921DD369400AA3416 /* GPX */,
+				330FE3EB21DD369400AA3416 /* nordgrus2018.xml */,
 				338D141221C673AC0065BB8D /* Sounds */,
 				338D13EC21C65F410065BB8D /* LaunchScreen.storyboard */,
 				338D13EA21C65F410065BB8D /* Assets.xcassets */,
@@ -223,6 +284,40 @@
 				338D141521C674110065BB8D /* pointC.m4a */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		33C6CEB021DE1BDC00AA9E64 /* ShowCast */ = {
+			isa = PBXGroup;
+			children = (
+				33C6CEB121DE1BDC00AA9E64 /* ShowCastModels.swift */,
+				33C6CEB321DE1BDC00AA9E64 /* ShowCastRouter.swift */,
+				33C6CEB721DE1BDC00AA9E64 /* ShowCastInteractor.swift */,
+				33C6CEB221DE1BDC00AA9E64 /* ShowCastWorker.swift */,
+				33C6CEB621DE1BDC00AA9E64 /* ShowCastPresenter.swift */,
+				33C6CEB521DE1BDC00AA9E64 /* ShowCastViewController.swift */,
+				33C6CEB421DE1BDC00AA9E64 /* ShowCastViewController.storyboard */,
+			);
+			path = ShowCast;
+			sourceTree = "<group>";
+		};
+		33C6CEBF21DF491000AA9E64 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				33C6CED321DF716100AA9E64 /* nordgrus.jpg */,
+				33C6CEC021DF49D700AA9E64 /* graapilevej.jpg */,
+				33C6CEC121DF49D700AA9E64 /* moeldrupvej.jpg */,
+				33C6CEC221DF49D700AA9E64 /* veloropa.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		33C6CECA21DF6D5200AA9E64 /* PresentCast */ = {
+			isa = PBXGroup;
+			children = (
+				33C6CECE21DF6D5200AA9E64 /* PresentCastViewController.storyboard */,
+				33C6CECD21DF6D5200AA9E64 /* PresentCastViewController.swift */,
+			);
+			path = PresentCast;
 			sourceTree = "<group>";
 		};
 		33DC7FCA21CBE34600F5C736 /* ListCasts */ = {
@@ -360,12 +455,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				33DC7FDD21CBE46A00F5C736 /* CastCell.xib in Resources */,
+				33C6CED221DF6D5200AA9E64 /* PresentCastViewController.storyboard in Resources */,
 				338D141821C674110065BB8D /* pointC.m4a in Resources */,
+				33C6CED421DF716100AA9E64 /* nordgrus.jpg in Resources */,
+				330FE3ED21DD369400AA3416 /* nordgrus2018.xml in Resources */,
+				33C6CEC521DF49D700AA9E64 /* veloropa.jpg in Resources */,
+				33C6CEC421DF49D700AA9E64 /* moeldrupvej.jpg in Resources */,
 				33E1BAEA21D27C45002E23AE /* ExploreViewController.storyboard in Resources */,
+				33C6CEBB21DE1BDC00AA9E64 /* ShowCastViewController.storyboard in Resources */,
 				338D141721C674110065BB8D /* pointB.m4a in Resources */,
 				338D141621C674110065BB8D /* pointA.m4a in Resources */,
 				338D13EE21C65F410065BB8D /* LaunchScreen.storyboard in Resources */,
+				330FE3EC21DD369400AA3416 /* nordgrus2018.xml in Resources */,
 				33DC7FD521CBE36B00F5C736 /* ListCastsViewController.storyboard in Resources */,
+				33C6CEC321DF49D700AA9E64 /* graapilevej.jpg in Resources */,
+				330FE3D921DD2E1700AA3416 /* ShowDiscoveryViewController.storyboard in Resources */,
 				33E1BAFD21D27CB1002E23AE /* MakeCastViewController.storyboard in Resources */,
 				338D13EB21C65F410065BB8D /* Assets.xcassets in Resources */,
 			);
@@ -386,6 +490,7 @@
 				"$(SRCROOT)/Explore/Carthage/Build/iOS/Serpent.framework",
 				"$(SRCROOT)/Explore/Carthage/Build/iOS/Cashier.framework",
 				"$(SRCROOT)/Explore/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Explore/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -395,6 +500,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Serpent.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Cashier.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -410,6 +516,7 @@
 				33E1BAED21D27C45002E23AE /* ExploreWorker.swift in Sources */,
 				33EF343921D23B1C0019F64E /* Colors.swift in Sources */,
 				338D13E421C65F3F0065BB8D /* AppDelegate.swift in Sources */,
+				330FE3D721DD2DF200AA3416 /* ShowDiscoveryViewController.swift in Sources */,
 				338D13FB21C660B70065BB8D /* Repository.swift in Sources */,
 				338D140B21C66A800065BB8D /* MockRepository.swift in Sources */,
 				33E1BAEC21D27C45002E23AE /* ExploreInteractor.swift in Sources */,
@@ -421,22 +528,29 @@
 				33DC7FD621CBE36B00F5C736 /* ListCastsModels.swift in Sources */,
 				33E1BAFA21D27CB1002E23AE /* MakeCastPresenter.swift in Sources */,
 				33E1BAEB21D27C45002E23AE /* ExploreViewController.swift in Sources */,
+				33C6CEBD21DE1BDC00AA9E64 /* ShowCastPresenter.swift in Sources */,
 				33DC7FD321CBE36B00F5C736 /* ListCastsWorker.swift in Sources */,
 				33E1BAEF21D27C45002E23AE /* ExploreModels.swift in Sources */,
+				33C6CEBE21DE1BDC00AA9E64 /* ShowCastInteractor.swift in Sources */,
 				33E1BAFF21D27CB1002E23AE /* MakeCastViewController.swift in Sources */,
 				33E1BAFE21D27CB1002E23AE /* MakeCastModels.swift in Sources */,
+				33C6CED121DF6D5200AA9E64 /* PresentCastViewController.swift in Sources */,
 				33E1BAFC21D27CB1002E23AE /* MakeCastRouter.swift in Sources */,
 				33DC7FD721CBE36B00F5C736 /* ListCastsViewController.swift in Sources */,
 				33E1BB0021D27CB1002E23AE /* MakeCastInteractor.swift in Sources */,
 				33E1BAFB21D27CB1002E23AE /* MakeCastWorker.swift in Sources */,
 				33E1BAF121D27C45002E23AE /* MainTabBar.swift in Sources */,
+				33C6CEBA21DE1BDC00AA9E64 /* ShowCastRouter.swift in Sources */,
 				338D140F21C66EE50065BB8D /* Discovery.swift in Sources */,
+				33C6CEBC21DE1BDC00AA9E64 /* ShowCastViewController.swift in Sources */,
+				33C6CEB921DE1BDC00AA9E64 /* ShowCastWorker.swift in Sources */,
 				33DC7FE021CBE75200F5C736 /* Extensions.swift in Sources */,
 				338D141121C6707A0065BB8D /* SoundClip.swift in Sources */,
 				330A251621D38D650042B901 /* StravaServerRepository.swift in Sources */,
 				33DC7FD421CBE36B00F5C736 /* ListCastsRouter.swift in Sources */,
 				330A252421D39F920042B901 /* StravaRoute.swift in Sources */,
 				33DC7FD221CBE36B00F5C736 /* ListCastsPresenter.swift in Sources */,
+				33C6CEB821DE1BDC00AA9E64 /* ShowCastModels.swift in Sources */,
 				33DC7FD821CBE36B00F5C736 /* ListCastsInteractor.swift in Sources */,
 				330A251421D38A750042B901 /* ServerRepository.swift in Sources */,
 				338D141A21C739830065BB8D /* LocationManager.swift in Sources */,

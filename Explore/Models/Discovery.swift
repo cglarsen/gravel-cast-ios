@@ -11,6 +11,8 @@ import Foundation
 struct Discovery {
     var id: String
     var name: String
+    var imageUrlString: String?
+    var description: String?
     var location: (latitude: Double, longitude: Double)
     var clip: SoundClip?
 }

@@ -26,5 +26,23 @@ extension MakeCast.Response {
 }
 
 extension MakeCast.DisplayData {
+    struct Cast {
+        var name: String
+        var image: String
+        var description: String
+        var points: [Explore.DisplayData.Disovery]
+    }
     
+    struct MapPoint {
+        var lat: Double
+        var long: Double
+    }
+    
+    struct Disovery {
+        var name: String
+        var point:(Double, Double)
+        var image: String?
+        var text: String?
+        var clip: SoundClip?
+    }
 }
