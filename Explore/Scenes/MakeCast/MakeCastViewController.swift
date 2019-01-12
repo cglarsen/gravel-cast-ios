@@ -22,7 +22,7 @@ class MakeCastViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var stravaRouteIdTextField: UITextField! {
         didSet {
-            stravaRouteIdTextField.text = "16534173"
+            stravaRouteIdTextField.text = "16756714"
         }
     }
     @IBOutlet weak var mapView: MKMapView! { didSet {
@@ -43,7 +43,10 @@ class MakeCastViewController: UIViewController {
     var interactor: MakeCastBusinessLogic?
     var router: (NSObjectProtocol & MakeCastRoutingLogic & MakeCastDataPassing)?
     
+    var stravaRoute: StravaRoute?
     var routeOverlay: MKOverlay?
+    var startEndCoordinate: CLLocationCoordinate2D?
+
     
     // MARK: - Init
     class func instantiate() -> MakeCastViewController {
@@ -90,11 +93,53 @@ class MakeCastViewController: UIViewController {
     }
     
     // MARK: - Misc
+    @objc func createStartPoint(gesture: UILongPressGestureRecognizer){
+        if gesture.state == .began {
+            
+            mapView.removeAnnotations(mapView.annotations)
+            
+            let point = gesture.location(in: self.mapView)
+            let coordinate = self.mapView.convert(point, toCoordinateFrom: nil)
+            
+            var shortestDistance:Double = 0
+            var closestPoint: CLLocationCoordinate2D?
+            var index: Int?
+            if let route = self.stravaRoute {
+                for (i,routePoint) in route.coordinates.enumerated() {
+                    let pointCoor = CLLocationCoordinate2D(latitude: Double(routePoint.lat)!, longitude: Double(routePoint.lon)!)
+                    let distance = CLLocation.distance(from: pointCoor, to: coordinate)
+                    if shortestDistance == 0 || shortestDistance > distance {
+                        print("Closest distance: \(distance)")
+                        closestPoint = pointCoor
+                        shortestDistance = distance
+                        index = i
+                    } else {
+                        print("Not closest distance: \(distance)")
+                    }
+                }
+            }
+            
+            guard let newAnnotationCoor = closestPoint else { return }
+            mapView.removeAnnotations(mapView.annotations)
+            let pin = MKPointAnnotation()
+            pin.title = "Start/Slut"
+            pin.coordinate = newAnnotationCoor
+            startEndCoordinate = coordinate
+            self.mapView.addAnnotation(pin)
+            
+            createNewRoute()
+        }
+    }
+    
+    func createNewRoute() {
+        
+    }
 }
 
 // MARK: - MakeCastDisplayLogic
 extension MakeCastViewController: MakeCastDisplayLogic {
     func display(stravaRoute: StravaRoute) {
+        self.stravaRoute = stravaRoute
         activityIndicator.stopAnimating()
         activityIndicator.isHidden = true
         goButton.isHidden = false
@@ -110,6 +155,17 @@ extension MakeCastViewController: MakeCastDisplayLogic {
         let routePolyline = MKPolyline(coordinates: points, count: points.count)
         mapView.addOverlay(routePolyline)
         mapView.setVisibleMapRect(routePolyline.boundingMapRect, animated: true)
+        
+//        for coor in points {
+//            let pin = MKPointAnnotation()
+//            pin.coordinate = coor
+//            self.mapView.addAnnotation(pin)
+//        }
+        
+        
+        //Add tapGestureRec
+        let tap = UILongPressGestureRecognizer(target: self, action: #selector(self.createStartPoint))
+        self.mapView.addGestureRecognizer(tap)
     }
     
     func displayError(message: String) {
