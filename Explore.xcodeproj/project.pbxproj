@@ -31,6 +31,9 @@
 		338D141721C674110065BB8D /* pointB.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 338D141421C674110065BB8D /* pointB.m4a */; };
 		338D141821C674110065BB8D /* pointC.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 338D141521C674110065BB8D /* pointC.m4a */; };
 		338D141A21C739830065BB8D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338D141921C739830065BB8D /* LocationManager.swift */; };
+		339C024F21F467AA00A91C7A /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339C024E21F467AA00A91C7A /* AudioManager.swift */; };
+		339C025121F4737900A91C7A /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339C025021F4737900A91C7A /* NotificationManager.swift */; };
+		339C025321F4793F00A91C7A /* notification_sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 339C025221F4793F00A91C7A /* notification_sound.m4a */; };
 		33C6CEB821DE1BDC00AA9E64 /* ShowCastModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CEB121DE1BDC00AA9E64 /* ShowCastModels.swift */; };
 		33C6CEB921DE1BDC00AA9E64 /* ShowCastWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CEB221DE1BDC00AA9E64 /* ShowCastWorker.swift */; };
 		33C6CEBA21DE1BDC00AA9E64 /* ShowCastRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CEB321DE1BDC00AA9E64 /* ShowCastRouter.swift */; };
@@ -100,6 +103,9 @@
 		338D141421C674110065BB8D /* pointB.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pointB.m4a; sourceTree = "<group>"; };
 		338D141521C674110065BB8D /* pointC.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pointC.m4a; sourceTree = "<group>"; };
 		338D141921C739830065BB8D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		339C024E21F467AA00A91C7A /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		339C025021F4737900A91C7A /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		339C025221F4793F00A91C7A /* notification_sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = notification_sound.m4a; sourceTree = "<group>"; };
 		33C6CEB121DE1BDC00AA9E64 /* ShowCastModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCastModels.swift; sourceTree = "<group>"; };
 		33C6CEB221DE1BDC00AA9E64 /* ShowCastWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCastWorker.swift; sourceTree = "<group>"; };
 		33C6CEB321DE1BDC00AA9E64 /* ShowCastRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCastRouter.swift; sourceTree = "<group>"; };
@@ -248,6 +254,8 @@
 			isa = PBXGroup;
 			children = (
 				338D141921C739830065BB8D /* LocationManager.swift */,
+				339C024E21F467AA00A91C7A /* AudioManager.swift */,
+				339C025021F4737900A91C7A /* NotificationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -279,6 +287,7 @@
 		338D141221C673AC0065BB8D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				339C025221F4793F00A91C7A /* notification_sound.m4a */,
 				338D141321C674100065BB8D /* pointA.m4a */,
 				338D141421C674110065BB8D /* pointB.m4a */,
 				338D141521C674110065BB8D /* pointC.m4a */,
@@ -460,6 +469,7 @@
 				33C6CED421DF716100AA9E64 /* nordgrus.jpg in Resources */,
 				330FE3ED21DD369400AA3416 /* nordgrus2018.xml in Resources */,
 				33C6CEC521DF49D700AA9E64 /* veloropa.jpg in Resources */,
+				339C025321F4793F00A91C7A /* notification_sound.m4a in Resources */,
 				33C6CEC421DF49D700AA9E64 /* moeldrupvej.jpg in Resources */,
 				33E1BAEA21D27C45002E23AE /* ExploreViewController.storyboard in Resources */,
 				33C6CEBB21DE1BDC00AA9E64 /* ShowCastViewController.storyboard in Resources */,
@@ -530,6 +540,7 @@
 				33E1BAEB21D27C45002E23AE /* ExploreViewController.swift in Sources */,
 				33C6CEBD21DE1BDC00AA9E64 /* ShowCastPresenter.swift in Sources */,
 				33DC7FD321CBE36B00F5C736 /* ListCastsWorker.swift in Sources */,
+				339C025121F4737900A91C7A /* NotificationManager.swift in Sources */,
 				33E1BAEF21D27C45002E23AE /* ExploreModels.swift in Sources */,
 				33C6CEBE21DE1BDC00AA9E64 /* ShowCastInteractor.swift in Sources */,
 				33E1BAFF21D27CB1002E23AE /* MakeCastViewController.swift in Sources */,
@@ -549,6 +560,7 @@
 				330A251621D38D650042B901 /* StravaServerRepository.swift in Sources */,
 				33DC7FD421CBE36B00F5C736 /* ListCastsRouter.swift in Sources */,
 				330A252421D39F920042B901 /* StravaRoute.swift in Sources */,
+				339C024F21F467AA00A91C7A /* AudioManager.swift in Sources */,
 				33DC7FD221CBE36B00F5C736 /* ListCastsPresenter.swift in Sources */,
 				33C6CEB821DE1BDC00AA9E64 /* ShowCastModels.swift in Sources */,
 				33DC7FD821CBE36B00F5C736 /* ListCastsInteractor.swift in Sources */,

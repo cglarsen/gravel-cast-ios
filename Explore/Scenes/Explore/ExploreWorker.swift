@@ -67,48 +67,19 @@ class ExploreWorker: NSObject {
         locationManager.delegate = self
         locationManager.activityType = .fitness
         locationManager.allowsBackgroundLocationUpdates = true
-      locationManager.distanceFilter = 10
+        locationManager.distanceFilter = 10
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
     }
     
-    private func vibrate() {
-        // Alert for an upcoming sound clip with vibration
-        
-        //let generator = UIImpactFeedbackGenerator(style: .heavy)
-        //generator.impactOccurred()
-        
-        //let generator = UINotificationFeedbackGenerator()
-        //generator.notificationOccurred(.warning)
-        
-        counter = 0
-        timer = Timer.scheduledTimer(timeInterval: 0.25,
-                                     target: self,
-                                     selector: #selector(customFeedback), userInfo: nil, repeats: true)
-    }
-    
-    @objc private func customFeedback() {
-        counter += 1
-        switch counter {
-        case 1, 3, 5:
-            let medium = UIImpactFeedbackGenerator(style: .light)
-            medium.prepare()
-            medium.impactOccurred()
-        case 2, 4, 6:
-            let error = UINotificationFeedbackGenerator()
-            error.prepare()
-            error.notificationOccurred(.warning)
-        default:
-            timer?.invalidate()
-        }
-    }
-    
     // Sound test
     @objc private func playUsingAVAudioPlayer(url: URL) {
+        AudioManager.set(active: true)
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.delegate = self
             audioPlayer?.play()
-            print("audio played")
+            print("audio playback started")
         } catch {
             print(error)
             print("audio not played")
@@ -122,13 +93,13 @@ class ExploreWorker: NSObject {
             return
         }
         
-        // First vibrate to warn on upcoming audio
-        vibrate()
+        // Fire send local push
+        NotificationManager.triggerNow(title: "Oplevelsespunkt nået", body: "Lyt efter -  om lidt afspilles en lille lydbid.")
         
-        // Wait 3 sec and play audio
+        // Wait 5 sec and play audio
         DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
             let url = URL(fileURLWithPath: filePath)
-           self.playUsingAVAudioPlayer(url: url)
+            self.playUsingAVAudioPlayer(url: url)
         }
     }
 
@@ -159,5 +130,12 @@ extension ExploreWorker: CLLocationManagerDelegate {
             }
         }
         delegate?.nearestDiscoveryDistance(nearestDistance)
+    }
+}
+
+extension ExploreWorker: AVAudioPlayerDelegate {
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        print("audio playback ended")
+        AudioManager.set(active: false)
     }
 }

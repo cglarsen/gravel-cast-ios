@@ -70,13 +70,16 @@ class ExploreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
+        NotificationManager.requestPermission()
         viewCreated()
     }
     
     // MARK: - Actions
     @IBAction func debugPlayAudio(_ sender: Any) {
         print("debugPlayAudio")
-        interactor?.debugDiscoveryHit(request: Explore.Request.DebugDiscoveryHit())
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+             self.interactor?.debugDiscoveryHit(request: Explore.Request.DebugDiscoveryHit())
+        }
     }
     @IBAction func exploreStateChanged(_ sender: UISwitch) {
         if sender.isOn {

@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        setAudioSession()
+        AudioManager.setup()
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
@@ -26,16 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-    
-    private func setAudioSession() {
-        let sess = AVAudioSession.sharedInstance()
-        try? sess.setCategory(.playback, mode:.default)
-        try? sess.setActive(false)
-        let opts = sess.categoryOptions.union(.interruptSpokenAudioAndMixWithOthers)
-        try? sess.setCategory(sess.category, mode: sess.mode, options: opts)
-        try? sess.setActive(true)
-    }
-    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -58,8 +58,12 @@ class MyParser: NSObject {
 }
 
 extension MyParser: XMLParserDelegate {
+    func parserDidStartDocument(_ parser: XMLParser) {
+        print("parserDidStartDocument: \(parser)")
+    }
+    
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
-        //rint("elementName: \(elementName), namespaceURI: \(namespaceURI), qName: \(qName), attributed: \(attributeDict)")
+        print("didStartElement: \(elementName), namespaceURI: \(namespaceURI), qualifiedName: \(qName), attributed: \(attributeDict)")
         
         if elementName == "trkpt" {
             if let coor = StravaCoordinate(dictionary: attributeDict) {
@@ -68,7 +72,44 @@ extension MyParser: XMLParserDelegate {
         }
     }
     
+    func parser(_ parser: XMLParser,
+                didEndElement elementName: String,
+                namespaceURI: String?,
+                qualifiedName qName: String?) {
+        print("didEndElement: \(elementName), namespaceURI: \(namespaceURI), qualifiedName: \(qName)")
+    }
+    
+    func parser(_ parser: XMLParser,
+                didStartMappingPrefix prefix: String,
+                toURI namespaceURI: String) {
+        print("didStartMappingPrefix: \(prefix), toURI namespaceURI: \(namespaceURI)")
+    }
+    
+    func parser(_ parser: XMLParser,
+                         resolveExternalEntityName name: String,
+                         systemID: String?) -> Data? {
+        print("resolveExternalEntityName: \(name), systemID: \(systemID)")
+        return nil
+    }
+
+    func parser(_ parser: XMLParser,
+                foundCharacters string: String) {
+        print("foundCharacters: \(string)")
+    }
+    
     func parserDidEndDocument(_ parser: XMLParser) {
         self.route = StravaRoute(coordinates: self.coordinates)
     }
+    
+    func parser(_ parser: XMLParser,
+                parseErrorOccurred parseError: Error) {
+        print("parseErrorOccurred: \(parseError)")
+    }
+    
+    func parser(_ parser: XMLParser,
+                validationErrorOccurred validationError: Error) {
+         print("validationErrorOccurred: \(validationError)")
+    }
+    
+    
 }

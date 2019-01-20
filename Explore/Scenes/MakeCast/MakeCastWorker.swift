@@ -22,7 +22,6 @@ class MakeCastWorker {
         stravaService.getRoute(for: id) { response in
             switch response.result {
             case .success(let gxpString):
-                print("This is the gxp string: \(gxpString)")
                 let parser = MyParser(xml: gxpString)
                 let route = parser.parseXML()
                 completion(route)
