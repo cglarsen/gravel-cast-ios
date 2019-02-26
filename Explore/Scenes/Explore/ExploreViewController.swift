@@ -69,9 +69,13 @@ class ExploreViewController: UIViewController {
     // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        mapView.delegate = self
-        NotificationManager.requestPermission()
+        setupView()
         viewCreated()
+    }
+    private func setupView() {
+        mapView.delegate = self
+        mapView.showsUserLocation = true
+        NotificationManager.requestPermission()
     }
     
     // MARK: - Actions
@@ -140,28 +144,7 @@ extension ExploreViewController: ExploreDisplayLogic {
     }
     
     func display(mapPoint: Explore.DisplayData.MapPoint) {
-        
-        // Add another annotation to the map.
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = CLLocationCoordinate2D(latitude: mapPoint.lat, longitude: mapPoint.long)
-        
-        // Also add to our map so we can remove old values later
-        self.locations.append(annotation)
-        
-        // Remove values if the array is too big
-        while locations.count > 100 {
-            let annotationToRemove = self.locations.first!
-            self.locations.remove(at: 0)
-            
-            // Also remove from the map
-            mapView.removeAnnotation(annotationToRemove)
-        }
-        
-        if UIApplication.shared.applicationState == .active {
-            mapView.showAnnotations(self.discoveryAnnotations + self.locations, animated: true)
-        } else {
-            print("App is backgrounded. New location is added to the list!")
-        }
+        //TODO: Will we use this?
     }
     
     func displayDiscovered(disovery: Explore.DisplayData.Disovery) {
@@ -199,7 +182,6 @@ extension ExploreViewController: ExploreDisplayLogic {
         }
         
         mapView.showAnnotations(discoveryAnnotations, animated: true)
-        
         
         // Async calulations
         for direction in directions {

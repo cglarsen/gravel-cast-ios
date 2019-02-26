@@ -58,3 +58,4 @@ fastlane/test_output
 
 # Specific
 Constants.swift
+Explore/Resources/Sounds/**/*.m4a

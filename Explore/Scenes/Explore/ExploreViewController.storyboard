@@ -50,9 +50,6 @@
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cVl-kg-eWh">
                                 <rect key="frame" x="25" y="616" width="51" height="31"/>
-                                <connections>
-                                    <action selector="exploreStateChanged:" destination="F2H-rH-Lsj" eventType="valueChanged" id="Sbx-za-xHe"/>
-                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6M7-VY-y3S">
                                 <rect key="frame" x="304.5" y="585" width="42" height="21"/>

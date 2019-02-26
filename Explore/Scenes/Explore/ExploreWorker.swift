@@ -92,6 +92,8 @@ class ExploreWorker: NSObject {
             print("File does not exist in the bundle.")
             return
         }
+        //
+        vibrate()
         
         // Fire send local push
         NotificationManager.triggerNow(title: "Oplevelsespunkt nået", body: "Lyt efter -  om lidt afspilles en lille lydbid.")
@@ -121,7 +123,7 @@ extension ExploreWorker: CLLocationManagerDelegate {
             let distance = lastLocation.distance(from: disoveryLocation)
             nearestDistance = nearestDistance < distance ? distance : nearestDistance
             print("distance to point: \(distance)")
-            if distance < 20 {
+            if distance < 70 {
                 //We hit a disoveryPoint
                 print("We hit a disoveryPoint with id: \(disovery.id)!")
                 self.delegate?.hitDiscovery(disovery)
@@ -130,6 +132,37 @@ extension ExploreWorker: CLLocationManagerDelegate {
             }
         }
         delegate?.nearestDiscoveryDistance(nearestDistance)
+    }
+    
+    private func vibrate() {
+        // Alert for an upcoming sound clip with vibration
+        
+        //let generator = UIImpactFeedbackGenerator(style: .heavy)
+        //generator.impactOccurred()
+        
+        //let generator = UINotificationFeedbackGenerator()
+        //generator.notificationOccurred(.warning)
+        
+        counter = 0
+        timer = Timer.scheduledTimer(timeInterval: 0.25,
+                                     target: self,
+                                     selector: #selector(customFeedback), userInfo: nil, repeats: true)
+    }
+    
+    @objc private func customFeedback() {
+        counter += 1
+        switch counter {
+        case 1, 3, 5:
+            let medium = UIImpactFeedbackGenerator(style: .light)
+            medium.prepare()
+            medium.impactOccurred()
+        case 2, 4, 6:
+            let error = UINotificationFeedbackGenerator()
+            error.prepare()
+            error.notificationOccurred(.warning)
+        default:
+            timer?.invalidate()
+        }
     }
 }
 

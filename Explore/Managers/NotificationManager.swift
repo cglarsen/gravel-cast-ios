@@ -33,7 +33,7 @@ struct NotificationManager {
                 if let body = body {
                     content.body = body
                 }
-                content.sound = UNNotificationSound(named: UNNotificationSoundName("notification_sound.m4a"))
+                content.sound = UNNotificationSound(named: UNNotificationSoundName("notification_sound_h.m4a"))
                 
                 let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1,
                                                                 repeats: false)

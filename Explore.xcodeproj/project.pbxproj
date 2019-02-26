@@ -31,9 +31,47 @@
 		338D141721C674110065BB8D /* pointB.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 338D141421C674110065BB8D /* pointB.m4a */; };
 		338D141821C674110065BB8D /* pointC.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 338D141521C674110065BB8D /* pointC.m4a */; };
 		338D141A21C739830065BB8D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338D141921C739830065BB8D /* LocationManager.swift */; };
+		3394EC4A22158D8D00730DF6 /* gravelcast1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3394EC4922158D8D00730DF6 /* gravelcast1.xml */; };
+		3394EC50221AA11600730DF6 /* gyrstingetestride.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3394EC4F221AA11600730DF6 /* gyrstingetestride.xml */; };
+		3394EC57221AA77900730DF6 /* gyr_dp2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3394EC52221AA77900730DF6 /* gyr_dp2.m4a */; };
+		3394EC58221AA77900730DF6 /* gyr_dp3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3394EC53221AA77900730DF6 /* gyr_dp3.m4a */; };
+		3394EC59221AA77900730DF6 /* gyr_dp1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3394EC54221AA77900730DF6 /* gyr_dp1.m4a */; };
+		3394EC5A221AA77900730DF6 /* gyr_dp4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3394EC55221AA77900730DF6 /* gyr_dp4.m4a */; };
+		3394EC5B221AA77900730DF6 /* gyr_dp5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3394EC56221AA77900730DF6 /* gyr_dp5.m4a */; };
+		3394EC61221ABDDD00730DF6 /* gyr_dp1_h.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3394EC5C221ABDDC00730DF6 /* gyr_dp1_h.m4a */; };
+		3394EC62221ABDDD00730DF6 /* gyr_dp3_h.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3394EC5D221ABDDD00730DF6 /* gyr_dp3_h.m4a */; };
+		3394EC63221ABDDD00730DF6 /* gyr_dp2_h.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3394EC5E221ABDDD00730DF6 /* gyr_dp2_h.m4a */; };
+		3394EC64221ABDDD00730DF6 /* gyr_dp4_h.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3394EC5F221ABDDD00730DF6 /* gyr_dp4_h.m4a */; };
+		3394EC65221ABDDD00730DF6 /* gyr_dp5_h.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3394EC60221ABDDD00730DF6 /* gyr_dp5_h.m4a */; };
+		3394EC67221ABF0A00730DF6 /* notification_sound_h.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3394EC66221ABF0A00730DF6 /* notification_sound_h.m4a */; };
 		339C024F21F467AA00A91C7A /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339C024E21F467AA00A91C7A /* AudioManager.swift */; };
 		339C025121F4737900A91C7A /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339C025021F4737900A91C7A /* NotificationManager.swift */; };
 		339C025321F4793F00A91C7A /* notification_sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 339C025221F4793F00A91C7A /* notification_sound.m4a */; };
+		33ACD028221C4BA00051F2C9 /* gc1_s4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD00F221C4B9F0051F2C9 /* gc1_s4.m4a */; };
+		33ACD029221C4BA00051F2C9 /* gc1_dp5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD010221C4B9F0051F2C9 /* gc1_dp5.m4a */; };
+		33ACD02A221C4BA00051F2C9 /* gc1_s3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD011221C4B9F0051F2C9 /* gc1_s3.m4a */; };
+		33ACD02B221C4BA00051F2C9 /* gc1_s10.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD012221C4B9F0051F2C9 /* gc1_s10.m4a */; };
+		33ACD02C221C4BA00051F2C9 /* gc1_s9.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD013221C4B9F0051F2C9 /* gc1_s9.m4a */; };
+		33ACD02D221C4BA00051F2C9 /* gc1_s1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD014221C4B9F0051F2C9 /* gc1_s1.m4a */; };
+		33ACD02E221C4BA00051F2C9 /* gc1_s12.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD015221C4B9F0051F2C9 /* gc1_s12.m4a */; };
+		33ACD02F221C4BA00051F2C9 /* gc1_s13.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD016221C4B9F0051F2C9 /* gc1_s13.m4a */; };
+		33ACD030221C4BA00051F2C9 /* gc1_s6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD017221C4B9F0051F2C9 /* gc1_s6.m4a */; };
+		33ACD031221C4BA00051F2C9 /* gc1_s5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD018221C4B9F0051F2C9 /* gc1_s5.m4a */; };
+		33ACD032221C4BA00051F2C9 /* gc1_s11.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD019221C4B9F0051F2C9 /* gc1_s11.m4a */; };
+		33ACD033221C4BA00051F2C9 /* gc1_welcome.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD01A221C4BA00051F2C9 /* gc1_welcome.m4a */; };
+		33ACD034221C4BA00051F2C9 /* gc1_s7.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD01B221C4BA00051F2C9 /* gc1_s7.m4a */; };
+		33ACD035221C4BA00051F2C9 /* gc1_end.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD01C221C4BA00051F2C9 /* gc1_end.m4a */; };
+		33ACD036221C4BA00051F2C9 /* gc1_dp2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD01D221C4BA00051F2C9 /* gc1_dp2.m4a */; };
+		33ACD037221C4BA00051F2C9 /* gc1_s2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD01E221C4BA00051F2C9 /* gc1_s2.m4a */; };
+		33ACD038221C4BA00051F2C9 /* gc1_dp1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD01F221C4BA00051F2C9 /* gc1_dp1.m4a */; };
+		33ACD039221C4BA00051F2C9 /* gc1_s14.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD020221C4BA00051F2C9 /* gc1_s14.m4a */; };
+		33ACD03A221C4BA00051F2C9 /* gc1_dp7.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD021221C4BA00051F2C9 /* gc1_dp7.m4a */; };
+		33ACD03B221C4BA00051F2C9 /* gc1_dp4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD022221C4BA00051F2C9 /* gc1_dp4.m4a */; };
+		33ACD03C221C4BA00051F2C9 /* gc1_s16.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD023221C4BA00051F2C9 /* gc1_s16.m4a */; };
+		33ACD03D221C4BA00051F2C9 /* gc1_dp3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD024221C4BA00051F2C9 /* gc1_dp3.m4a */; };
+		33ACD03E221C4BA00051F2C9 /* gc1_s15.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD025221C4BA00051F2C9 /* gc1_s15.m4a */; };
+		33ACD03F221C4BA00051F2C9 /* gc1_dp6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD026221C4BA00051F2C9 /* gc1_dp6.m4a */; };
+		33ACD040221C4BA00051F2C9 /* gc1_s8.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD027221C4BA00051F2C9 /* gc1_s8.m4a */; };
 		33C6CEB821DE1BDC00AA9E64 /* ShowCastModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CEB121DE1BDC00AA9E64 /* ShowCastModels.swift */; };
 		33C6CEB921DE1BDC00AA9E64 /* ShowCastWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CEB221DE1BDC00AA9E64 /* ShowCastWorker.swift */; };
 		33C6CEBA21DE1BDC00AA9E64 /* ShowCastRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CEB321DE1BDC00AA9E64 /* ShowCastRouter.swift */; };
@@ -103,9 +141,47 @@
 		338D141421C674110065BB8D /* pointB.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pointB.m4a; sourceTree = "<group>"; };
 		338D141521C674110065BB8D /* pointC.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pointC.m4a; sourceTree = "<group>"; };
 		338D141921C739830065BB8D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		3394EC4922158D8D00730DF6 /* gravelcast1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gravelcast1.xml; sourceTree = "<group>"; };
+		3394EC4F221AA11600730DF6 /* gyrstingetestride.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gyrstingetestride.xml; sourceTree = "<group>"; };
+		3394EC52221AA77900730DF6 /* gyr_dp2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gyr_dp2.m4a; sourceTree = "<group>"; };
+		3394EC53221AA77900730DF6 /* gyr_dp3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gyr_dp3.m4a; sourceTree = "<group>"; };
+		3394EC54221AA77900730DF6 /* gyr_dp1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gyr_dp1.m4a; sourceTree = "<group>"; };
+		3394EC55221AA77900730DF6 /* gyr_dp4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gyr_dp4.m4a; sourceTree = "<group>"; };
+		3394EC56221AA77900730DF6 /* gyr_dp5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gyr_dp5.m4a; sourceTree = "<group>"; };
+		3394EC5C221ABDDC00730DF6 /* gyr_dp1_h.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gyr_dp1_h.m4a; sourceTree = "<group>"; };
+		3394EC5D221ABDDD00730DF6 /* gyr_dp3_h.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gyr_dp3_h.m4a; sourceTree = "<group>"; };
+		3394EC5E221ABDDD00730DF6 /* gyr_dp2_h.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gyr_dp2_h.m4a; sourceTree = "<group>"; };
+		3394EC5F221ABDDD00730DF6 /* gyr_dp4_h.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gyr_dp4_h.m4a; sourceTree = "<group>"; };
+		3394EC60221ABDDD00730DF6 /* gyr_dp5_h.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gyr_dp5_h.m4a; sourceTree = "<group>"; };
+		3394EC66221ABF0A00730DF6 /* notification_sound_h.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = notification_sound_h.m4a; sourceTree = "<group>"; };
 		339C024E21F467AA00A91C7A /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		339C025021F4737900A91C7A /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		339C025221F4793F00A91C7A /* notification_sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = notification_sound.m4a; sourceTree = "<group>"; };
+		33ACD00F221C4B9F0051F2C9 /* gc1_s4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s4.m4a; sourceTree = "<group>"; };
+		33ACD010221C4B9F0051F2C9 /* gc1_dp5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_dp5.m4a; sourceTree = "<group>"; };
+		33ACD011221C4B9F0051F2C9 /* gc1_s3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s3.m4a; sourceTree = "<group>"; };
+		33ACD012221C4B9F0051F2C9 /* gc1_s10.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s10.m4a; sourceTree = "<group>"; };
+		33ACD013221C4B9F0051F2C9 /* gc1_s9.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s9.m4a; sourceTree = "<group>"; };
+		33ACD014221C4B9F0051F2C9 /* gc1_s1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s1.m4a; sourceTree = "<group>"; };
+		33ACD015221C4B9F0051F2C9 /* gc1_s12.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s12.m4a; sourceTree = "<group>"; };
+		33ACD016221C4B9F0051F2C9 /* gc1_s13.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s13.m4a; sourceTree = "<group>"; };
+		33ACD017221C4B9F0051F2C9 /* gc1_s6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s6.m4a; sourceTree = "<group>"; };
+		33ACD018221C4B9F0051F2C9 /* gc1_s5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s5.m4a; sourceTree = "<group>"; };
+		33ACD019221C4B9F0051F2C9 /* gc1_s11.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s11.m4a; sourceTree = "<group>"; };
+		33ACD01A221C4BA00051F2C9 /* gc1_welcome.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_welcome.m4a; sourceTree = "<group>"; };
+		33ACD01B221C4BA00051F2C9 /* gc1_s7.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s7.m4a; sourceTree = "<group>"; };
+		33ACD01C221C4BA00051F2C9 /* gc1_end.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_end.m4a; sourceTree = "<group>"; };
+		33ACD01D221C4BA00051F2C9 /* gc1_dp2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_dp2.m4a; sourceTree = "<group>"; };
+		33ACD01E221C4BA00051F2C9 /* gc1_s2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s2.m4a; sourceTree = "<group>"; };
+		33ACD01F221C4BA00051F2C9 /* gc1_dp1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_dp1.m4a; sourceTree = "<group>"; };
+		33ACD020221C4BA00051F2C9 /* gc1_s14.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s14.m4a; sourceTree = "<group>"; };
+		33ACD021221C4BA00051F2C9 /* gc1_dp7.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_dp7.m4a; sourceTree = "<group>"; };
+		33ACD022221C4BA00051F2C9 /* gc1_dp4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_dp4.m4a; sourceTree = "<group>"; };
+		33ACD023221C4BA00051F2C9 /* gc1_s16.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s16.m4a; sourceTree = "<group>"; };
+		33ACD024221C4BA00051F2C9 /* gc1_dp3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_dp3.m4a; sourceTree = "<group>"; };
+		33ACD025221C4BA00051F2C9 /* gc1_s15.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s15.m4a; sourceTree = "<group>"; };
+		33ACD026221C4BA00051F2C9 /* gc1_dp6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_dp6.m4a; sourceTree = "<group>"; };
+		33ACD027221C4BA00051F2C9 /* gc1_s8.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s8.m4a; sourceTree = "<group>"; };
 		33C6CEB121DE1BDC00AA9E64 /* ShowCastModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCastModels.swift; sourceTree = "<group>"; };
 		33C6CEB221DE1BDC00AA9E64 /* ShowCastWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCastWorker.swift; sourceTree = "<group>"; };
 		33C6CEB321DE1BDC00AA9E64 /* ShowCastRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCastRouter.swift; sourceTree = "<group>"; };
@@ -188,6 +264,8 @@
 		330FE3E921DD369400AA3416 /* GPX */ = {
 			isa = PBXGroup;
 			children = (
+				3394EC4F221AA11600730DF6 /* gyrstingetestride.xml */,
+				3394EC4922158D8D00730DF6 /* gravelcast1.xml */,
 				330FE3EA21DD369400AA3416 /* nordgrus2018.xml */,
 			);
 			path = GPX;
@@ -287,12 +365,64 @@
 		338D141221C673AC0065BB8D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				3394EC51221AA77900730DF6 /* GyrstingeTest */,
+				3394EC3E221585E700730DF6 /* GravelCast1 */,
 				339C025221F4793F00A91C7A /* notification_sound.m4a */,
+				3394EC66221ABF0A00730DF6 /* notification_sound_h.m4a */,
 				338D141321C674100065BB8D /* pointA.m4a */,
 				338D141421C674110065BB8D /* pointB.m4a */,
 				338D141521C674110065BB8D /* pointC.m4a */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		3394EC3E221585E700730DF6 /* GravelCast1 */ = {
+			isa = PBXGroup;
+			children = (
+				33ACD01F221C4BA00051F2C9 /* gc1_dp1.m4a */,
+				33ACD01D221C4BA00051F2C9 /* gc1_dp2.m4a */,
+				33ACD024221C4BA00051F2C9 /* gc1_dp3.m4a */,
+				33ACD022221C4BA00051F2C9 /* gc1_dp4.m4a */,
+				33ACD010221C4B9F0051F2C9 /* gc1_dp5.m4a */,
+				33ACD026221C4BA00051F2C9 /* gc1_dp6.m4a */,
+				33ACD021221C4BA00051F2C9 /* gc1_dp7.m4a */,
+				33ACD01C221C4BA00051F2C9 /* gc1_end.m4a */,
+				33ACD014221C4B9F0051F2C9 /* gc1_s1.m4a */,
+				33ACD01E221C4BA00051F2C9 /* gc1_s2.m4a */,
+				33ACD011221C4B9F0051F2C9 /* gc1_s3.m4a */,
+				33ACD00F221C4B9F0051F2C9 /* gc1_s4.m4a */,
+				33ACD018221C4B9F0051F2C9 /* gc1_s5.m4a */,
+				33ACD017221C4B9F0051F2C9 /* gc1_s6.m4a */,
+				33ACD01B221C4BA00051F2C9 /* gc1_s7.m4a */,
+				33ACD027221C4BA00051F2C9 /* gc1_s8.m4a */,
+				33ACD013221C4B9F0051F2C9 /* gc1_s9.m4a */,
+				33ACD012221C4B9F0051F2C9 /* gc1_s10.m4a */,
+				33ACD019221C4B9F0051F2C9 /* gc1_s11.m4a */,
+				33ACD015221C4B9F0051F2C9 /* gc1_s12.m4a */,
+				33ACD016221C4B9F0051F2C9 /* gc1_s13.m4a */,
+				33ACD020221C4BA00051F2C9 /* gc1_s14.m4a */,
+				33ACD025221C4BA00051F2C9 /* gc1_s15.m4a */,
+				33ACD023221C4BA00051F2C9 /* gc1_s16.m4a */,
+				33ACD01A221C4BA00051F2C9 /* gc1_welcome.m4a */,
+			);
+			path = GravelCast1;
+			sourceTree = "<group>";
+		};
+		3394EC51221AA77900730DF6 /* GyrstingeTest */ = {
+			isa = PBXGroup;
+			children = (
+				3394EC5C221ABDDC00730DF6 /* gyr_dp1_h.m4a */,
+				3394EC5E221ABDDD00730DF6 /* gyr_dp2_h.m4a */,
+				3394EC5D221ABDDD00730DF6 /* gyr_dp3_h.m4a */,
+				3394EC5F221ABDDD00730DF6 /* gyr_dp4_h.m4a */,
+				3394EC60221ABDDD00730DF6 /* gyr_dp5_h.m4a */,
+				3394EC52221AA77900730DF6 /* gyr_dp2.m4a */,
+				3394EC53221AA77900730DF6 /* gyr_dp3.m4a */,
+				3394EC54221AA77900730DF6 /* gyr_dp1.m4a */,
+				3394EC55221AA77900730DF6 /* gyr_dp4.m4a */,
+				3394EC56221AA77900730DF6 /* gyr_dp5.m4a */,
+			);
+			path = GyrstingeTest;
 			sourceTree = "<group>";
 		};
 		33C6CEB021DE1BDC00AA9E64 /* ShowCast */ = {
@@ -463,25 +593,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33ACD03A221C4BA00051F2C9 /* gc1_dp7.m4a in Resources */,
+				3394EC57221AA77900730DF6 /* gyr_dp2.m4a in Resources */,
+				33ACD03F221C4BA00051F2C9 /* gc1_dp6.m4a in Resources */,
+				33ACD03D221C4BA00051F2C9 /* gc1_dp3.m4a in Resources */,
 				33DC7FDD21CBE46A00F5C736 /* CastCell.xib in Resources */,
 				33C6CED221DF6D5200AA9E64 /* PresentCastViewController.storyboard in Resources */,
+				33ACD029221C4BA00051F2C9 /* gc1_dp5.m4a in Resources */,
+				3394EC58221AA77900730DF6 /* gyr_dp3.m4a in Resources */,
+				33ACD036221C4BA00051F2C9 /* gc1_dp2.m4a in Resources */,
+				3394EC50221AA11600730DF6 /* gyrstingetestride.xml in Resources */,
+				33ACD038221C4BA00051F2C9 /* gc1_dp1.m4a in Resources */,
+				3394EC64221ABDDD00730DF6 /* gyr_dp4_h.m4a in Resources */,
+				33ACD02B221C4BA00051F2C9 /* gc1_s10.m4a in Resources */,
 				338D141821C674110065BB8D /* pointC.m4a in Resources */,
+				33ACD02C221C4BA00051F2C9 /* gc1_s9.m4a in Resources */,
+				33ACD037221C4BA00051F2C9 /* gc1_s2.m4a in Resources */,
 				33C6CED421DF716100AA9E64 /* nordgrus.jpg in Resources */,
 				330FE3ED21DD369400AA3416 /* nordgrus2018.xml in Resources */,
+				3394EC67221ABF0A00730DF6 /* notification_sound_h.m4a in Resources */,
+				33ACD02E221C4BA00051F2C9 /* gc1_s12.m4a in Resources */,
 				33C6CEC521DF49D700AA9E64 /* veloropa.jpg in Resources */,
 				339C025321F4793F00A91C7A /* notification_sound.m4a in Resources */,
 				33C6CEC421DF49D700AA9E64 /* moeldrupvej.jpg in Resources */,
 				33E1BAEA21D27C45002E23AE /* ExploreViewController.storyboard in Resources */,
+				33ACD028221C4BA00051F2C9 /* gc1_s4.m4a in Resources */,
 				33C6CEBB21DE1BDC00AA9E64 /* ShowCastViewController.storyboard in Resources */,
 				338D141721C674110065BB8D /* pointB.m4a in Resources */,
 				338D141621C674110065BB8D /* pointA.m4a in Resources */,
+				33ACD031221C4BA00051F2C9 /* gc1_s5.m4a in Resources */,
+				3394EC5A221AA77900730DF6 /* gyr_dp4.m4a in Resources */,
+				3394EC65221ABDDD00730DF6 /* gyr_dp5_h.m4a in Resources */,
+				33ACD035221C4BA00051F2C9 /* gc1_end.m4a in Resources */,
+				33ACD033221C4BA00051F2C9 /* gc1_welcome.m4a in Resources */,
 				338D13EE21C65F410065BB8D /* LaunchScreen.storyboard in Resources */,
+				33ACD02D221C4BA00051F2C9 /* gc1_s1.m4a in Resources */,
+				3394EC62221ABDDD00730DF6 /* gyr_dp3_h.m4a in Resources */,
 				330FE3EC21DD369400AA3416 /* nordgrus2018.xml in Resources */,
+				33ACD039221C4BA00051F2C9 /* gc1_s14.m4a in Resources */,
+				3394EC61221ABDDD00730DF6 /* gyr_dp1_h.m4a in Resources */,
+				33ACD02F221C4BA00051F2C9 /* gc1_s13.m4a in Resources */,
+				33ACD034221C4BA00051F2C9 /* gc1_s7.m4a in Resources */,
 				33DC7FD521CBE36B00F5C736 /* ListCastsViewController.storyboard in Resources */,
+				3394EC59221AA77900730DF6 /* gyr_dp1.m4a in Resources */,
+				33ACD032221C4BA00051F2C9 /* gc1_s11.m4a in Resources */,
 				33C6CEC321DF49D700AA9E64 /* graapilevej.jpg in Resources */,
 				330FE3D921DD2E1700AA3416 /* ShowDiscoveryViewController.storyboard in Resources */,
+				33ACD02A221C4BA00051F2C9 /* gc1_s3.m4a in Resources */,
+				3394EC4A22158D8D00730DF6 /* gravelcast1.xml in Resources */,
+				33ACD03B221C4BA00051F2C9 /* gc1_dp4.m4a in Resources */,
 				33E1BAFD21D27CB1002E23AE /* MakeCastViewController.storyboard in Resources */,
+				33ACD03C221C4BA00051F2C9 /* gc1_s16.m4a in Resources */,
 				338D13EB21C65F410065BB8D /* Assets.xcassets in Resources */,
+				33ACD030221C4BA00051F2C9 /* gc1_s6.m4a in Resources */,
+				3394EC5B221AA77900730DF6 /* gyr_dp5.m4a in Resources */,
+				33ACD03E221C4BA00051F2C9 /* gc1_s15.m4a in Resources */,
+				3394EC63221ABDDD00730DF6 /* gyr_dp2_h.m4a in Resources */,
+				33ACD040221C4BA00051F2C9 /* gc1_s8.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
