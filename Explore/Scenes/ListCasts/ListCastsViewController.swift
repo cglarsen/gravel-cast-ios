@@ -10,6 +10,7 @@
 //
 
 import UIKit
+import SnapKit
 
 protocol ListCastsDisplayLogic: class {
     func display(casts: [ListCasts.DisplayData.Cast])
@@ -26,6 +27,7 @@ class ListCastsViewController: UIViewController {
             tableView.allowsSelection = true
             tableView.separatorInset = .zero
             tableView.separatorStyle = .none
+            tableView.backgroundColor = .clear
         }
     }
     
@@ -60,6 +62,7 @@ class ListCastsViewController: UIViewController {
     // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
         viewCreated()
     }
     
@@ -77,6 +80,9 @@ class ListCastsViewController: UIViewController {
     }
     
     // MARK: - Misc
+    private func setupView() {
+        view.backgroundColor = UIColor.gcLightGreen
+    }
 }
 
 extension ListCastsViewController: UITableViewDataSource {
@@ -99,6 +105,26 @@ extension ListCastsViewController: UITableViewDataSource {
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 160.0
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        
+        let imageView = UIImageView()
+        imageView.image = #imageLiteral(resourceName: "logoWhite")
+        imageView.contentMode = .scaleAspectFit
+        
+        headerView.addSubview(imageView)
+        
+        imageView.snp.makeConstraints { (make) in
+            make.centerX.equalTo(headerView.snp.centerX)
+            make.height.equalTo(100)
+        }
+        return headerView
     }
 }
 

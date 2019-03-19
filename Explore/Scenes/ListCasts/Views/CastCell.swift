@@ -16,7 +16,9 @@ class CastCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        nameLabel.textColor = .white
+        regionLabel.textColor = .white
+        numberOfPointsLabel.textColor = .white
     }
     
     

@@ -8,6 +8,19 @@
 
 import Foundation
 import CoreLocation
+import UIKit
+
+// MARK: - UIButton -
+extension UIButton{
+    func addText(spacing: CGFloat){
+        guard let title = self.titleLabel?.text else { return }
+        let attributedString = NSMutableAttributedString(string: title)
+        attributedString.addAttribute(NSAttributedString.Key.kern,
+                                      value: spacing,
+                                      range: NSRange(location: 0, length: (title.count)))
+        self.setAttributedTitle(attributedString, for: .normal)
+    }
+}
 
 // MARK: - Collection -
 extension Collection {
@@ -17,7 +30,7 @@ extension Collection {
         return indices.contains(index) ? self[index] : nil
     }
 }
-
+// MARK: - CLLocation -
 extension CLLocation {
     
     /// Get distance between two points

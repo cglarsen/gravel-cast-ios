@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Book.otf">
+            <string>CircularStd-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Intro View Controller-->
+        <scene sceneID="i0m-iF-p80">
+            <objects>
+                <viewController storyboardIdentifier="IntroViewController" id="F2H-rH-Lsj" customClass="IntroViewController" customModule="Explore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ev-QE-M02">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoWhite" translatesAutoresizingMaskIntoConstraints="NO" id="lpP-Uk-2EV">
+                                <rect key="frame" x="33.5" y="55" width="308" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="yH6-Mo-Agq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnC-LW-9Rr">
+                                <rect key="frame" x="25" y="175" width="325" height="274.5"/>
+                                <mutableString key="text">Denne lille teskt fortæller om GravelCast, hvorfor vi har skabt det og hvordan det skal bruges. Vi brænder for grus, bagveje, natur, oplevelser og historier. Derfor håber vi at GravelCast kan blive brugt og elsker, bla. bla. Det er ingen hemmelighed at vi elsker at forhindringer og omveje, derfor har vi skabt denne lille app, der forhåbentlig kan inspirere til netop det.</mutableString>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trees5" translatesAutoresizingMaskIntoConstraints="NO" id="Cbh-f0-mZQ">
+                                <rect key="frame" x="0.0" y="489.5" width="375" height="177.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Cbh-f0-mZQ" secondAttribute="height" multiplier="740:350" id="Kfg-7v-fBL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfx-Vg-Ddi">
+                                <rect key="frame" x="97.5" y="486" width="180" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="VJF-pY-5Dw"/>
+                                    <constraint firstAttribute="height" constant="60" id="ZEF-Wg-pF3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="20"/>
+                                <state key="normal" title="S T A R T"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lpP-Uk-2EV" firstAttribute="centerX" secondItem="Fhz-5B-qaF" secondAttribute="centerX" id="4gL-RL-cet"/>
+                            <constraint firstItem="Cbh-f0-mZQ" firstAttribute="top" secondItem="YnC-LW-9Rr" secondAttribute="bottom" constant="40" id="897-ZR-DJY"/>
+                            <constraint firstItem="Cbh-f0-mZQ" firstAttribute="leading" secondItem="Fhz-5B-qaF" secondAttribute="leading" id="CZE-U4-f18"/>
+                            <constraint firstItem="Cbh-f0-mZQ" firstAttribute="top" secondItem="kfx-Vg-Ddi" secondAttribute="bottom" constant="-56.5" id="Fks-BO-FRt"/>
+                            <constraint firstItem="Fhz-5B-qaF" firstAttribute="trailing" secondItem="YnC-LW-9Rr" secondAttribute="trailing" constant="25" id="Qcb-le-HD8"/>
+                            <constraint firstAttribute="bottom" secondItem="Cbh-f0-mZQ" secondAttribute="bottom" id="QrM-lI-yET"/>
+                            <constraint firstItem="Fhz-5B-qaF" firstAttribute="trailing" secondItem="Cbh-f0-mZQ" secondAttribute="trailing" id="cNF-z8-Np7"/>
+                            <constraint firstItem="YnC-LW-9Rr" firstAttribute="leading" secondItem="Fhz-5B-qaF" secondAttribute="leading" constant="25" id="fY2-Ee-NMH"/>
+                            <constraint firstItem="YnC-LW-9Rr" firstAttribute="top" secondItem="lpP-Uk-2EV" secondAttribute="bottom" constant="40" id="hvb-MS-iBb"/>
+                            <constraint firstItem="lpP-Uk-2EV" firstAttribute="top" secondItem="Fhz-5B-qaF" secondAttribute="top" constant="35" id="pvl-P6-Y9V"/>
+                            <constraint firstItem="kfx-Vg-Ddi" firstAttribute="centerX" secondItem="Fhz-5B-qaF" secondAttribute="centerX" id="tPz-xa-Yab"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fhz-5B-qaF"/>
+                    </view>
+                    <connections>
+                        <outlet property="startButton" destination="kfx-Vg-Ddi" id="Ai4-Ih-SiY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FyU-Lz-LgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7.2000000000000002" y="146.17691154422789"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logoWhite" width="308" height="132.5"/>
+        <image name="trees5" width="1480" height="700"/>
+    </resources>
+</document>

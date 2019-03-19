@@ -28,6 +28,17 @@
 	<string>Explore needs location even when you do not have the app open to work properly.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Explore needs location even when you do not have the app open to work properly.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>CircularStd-Black.otf</string>
+		<string>CircularStd-BlackItalic.otf</string>
+		<string>CircularStd-Bold.otf</string>
+		<string>CircularStd-BoldItalic.otf</string>
+		<string>CircularStd-Book.otf</string>
+		<string>CircularStd-BookItalic.otf</string>
+		<string>CircularStd-Medium.otf</string>
+		<string>CircularStd-MediumItalic.otf</string>
+	</array>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>

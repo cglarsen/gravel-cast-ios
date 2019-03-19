@@ -21,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        window?.rootViewController = MainTabBar()
+        //window?.rootViewController = MainTabBar()
+        //window?.rootViewController = IntroViewController.instantiate()
+        window?.rootViewController = PickAreaViewController.instantiate()
         window?.makeKeyAndVisible()
         
         return true

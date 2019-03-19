@@ -72,6 +72,21 @@
 		33ACD03E221C4BA00051F2C9 /* gc1_s15.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD025221C4BA00051F2C9 /* gc1_s15.m4a */; };
 		33ACD03F221C4BA00051F2C9 /* gc1_dp6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD026221C4BA00051F2C9 /* gc1_dp6.m4a */; };
 		33ACD040221C4BA00051F2C9 /* gc1_s8.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD027221C4BA00051F2C9 /* gc1_s8.m4a */; };
+		33ACD04A222547860051F2C9 /* CircularStd-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD042222547850051F2C9 /* CircularStd-BlackItalic.otf */; };
+		33ACD04B222547860051F2C9 /* CircularStd-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD043222547850051F2C9 /* CircularStd-MediumItalic.otf */; };
+		33ACD04C222547860051F2C9 /* CircularStd-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD044222547850051F2C9 /* CircularStd-BoldItalic.otf */; };
+		33ACD04D222547860051F2C9 /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD045222547850051F2C9 /* CircularStd-Bold.otf */; };
+		33ACD04E222547860051F2C9 /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD046222547850051F2C9 /* CircularStd-Black.otf */; };
+		33ACD04F222547860051F2C9 /* CircularStd-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD047222547850051F2C9 /* CircularStd-BookItalic.otf */; };
+		33ACD050222547860051F2C9 /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD048222547850051F2C9 /* CircularStd-Medium.otf */; };
+		33ACD051222547860051F2C9 /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD049222547860051F2C9 /* CircularStd-Book.otf */; };
+		33ACD05A22257EBA0051F2C9 /* IntroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACD05322257EBA0051F2C9 /* IntroPresenter.swift */; };
+		33ACD05B22257EBA0051F2C9 /* IntroWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACD05422257EBA0051F2C9 /* IntroWorker.swift */; };
+		33ACD05C22257EBA0051F2C9 /* IntroRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACD05522257EBA0051F2C9 /* IntroRouter.swift */; };
+		33ACD05D22257EBA0051F2C9 /* IntroViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33ACD05622257EBA0051F2C9 /* IntroViewController.storyboard */; };
+		33ACD05E22257EBA0051F2C9 /* IntroModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACD05722257EBA0051F2C9 /* IntroModels.swift */; };
+		33ACD05F22257EBA0051F2C9 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACD05822257EBA0051F2C9 /* IntroViewController.swift */; };
+		33ACD06022257EBA0051F2C9 /* IntroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ACD05922257EBA0051F2C9 /* IntroInteractor.swift */; };
 		33C6CEB821DE1BDC00AA9E64 /* ShowCastModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CEB121DE1BDC00AA9E64 /* ShowCastModels.swift */; };
 		33C6CEB921DE1BDC00AA9E64 /* ShowCastWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CEB221DE1BDC00AA9E64 /* ShowCastWorker.swift */; };
 		33C6CEBA21DE1BDC00AA9E64 /* ShowCastRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CEB321DE1BDC00AA9E64 /* ShowCastRouter.swift */; };
@@ -86,6 +101,16 @@
 		33C6CED121DF6D5200AA9E64 /* PresentCastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6CECD21DF6D5200AA9E64 /* PresentCastViewController.swift */; };
 		33C6CED221DF6D5200AA9E64 /* PresentCastViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C6CECE21DF6D5200AA9E64 /* PresentCastViewController.storyboard */; };
 		33C6CED421DF716100AA9E64 /* nordgrus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33C6CED321DF716100AA9E64 /* nordgrus.jpg */; };
+		33C9CAD522414A0400D9B413 /* PickAreaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9CACE22414A0400D9B413 /* PickAreaPresenter.swift */; };
+		33C9CAD622414A0400D9B413 /* PickAreaWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9CACF22414A0400D9B413 /* PickAreaWorker.swift */; };
+		33C9CAD722414A0400D9B413 /* PickAreaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9CAD022414A0400D9B413 /* PickAreaRouter.swift */; };
+		33C9CAD822414A0400D9B413 /* PickAreaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C9CAD122414A0400D9B413 /* PickAreaViewController.storyboard */; };
+		33C9CAD922414A0400D9B413 /* PickAreaModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9CAD222414A0400D9B413 /* PickAreaModels.swift */; };
+		33C9CADA22414A0400D9B413 /* PickAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9CAD322414A0400D9B413 /* PickAreaViewController.swift */; };
+		33C9CADB22414A0400D9B413 /* PickAreaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9CAD422414A0400D9B413 /* PickAreaInteractor.swift */; };
+		33C9CADD2241841900D9B413 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C9CADC2241841900D9B413 /* Lottie.framework */; };
+		33C9CAE0224184B800D9B413 /* pulse-effect.json in Resources */ = {isa = PBXBuildFile; fileRef = 33C9CADF224184B800D9B413 /* pulse-effect.json */; };
+		33C9CAE2224186ED00D9B413 /* LottieButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9CAE1224186ED00D9B413 /* LottieButton.swift */; };
 		33DC7FD221CBE36B00F5C736 /* ListCastsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DC7FCB21CBE36B00F5C736 /* ListCastsPresenter.swift */; };
 		33DC7FD321CBE36B00F5C736 /* ListCastsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DC7FCC21CBE36B00F5C736 /* ListCastsWorker.swift */; };
 		33DC7FD421CBE36B00F5C736 /* ListCastsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DC7FCD21CBE36B00F5C736 /* ListCastsRouter.swift */; };
@@ -182,6 +207,21 @@
 		33ACD025221C4BA00051F2C9 /* gc1_s15.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s15.m4a; sourceTree = "<group>"; };
 		33ACD026221C4BA00051F2C9 /* gc1_dp6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_dp6.m4a; sourceTree = "<group>"; };
 		33ACD027221C4BA00051F2C9 /* gc1_s8.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gc1_s8.m4a; sourceTree = "<group>"; };
+		33ACD042222547850051F2C9 /* CircularStd-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BlackItalic.otf"; sourceTree = "<group>"; };
+		33ACD043222547850051F2C9 /* CircularStd-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-MediumItalic.otf"; sourceTree = "<group>"; };
+		33ACD044222547850051F2C9 /* CircularStd-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BoldItalic.otf"; sourceTree = "<group>"; };
+		33ACD045222547850051F2C9 /* CircularStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.otf"; sourceTree = "<group>"; };
+		33ACD046222547850051F2C9 /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
+		33ACD047222547850051F2C9 /* CircularStd-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BookItalic.otf"; sourceTree = "<group>"; };
+		33ACD048222547850051F2C9 /* CircularStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.otf"; sourceTree = "<group>"; };
+		33ACD049222547860051F2C9 /* CircularStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.otf"; sourceTree = "<group>"; };
+		33ACD05322257EBA0051F2C9 /* IntroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPresenter.swift; sourceTree = "<group>"; };
+		33ACD05422257EBA0051F2C9 /* IntroWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroWorker.swift; sourceTree = "<group>"; };
+		33ACD05522257EBA0051F2C9 /* IntroRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroRouter.swift; sourceTree = "<group>"; };
+		33ACD05622257EBA0051F2C9 /* IntroViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IntroViewController.storyboard; sourceTree = "<group>"; };
+		33ACD05722257EBA0051F2C9 /* IntroModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroModels.swift; sourceTree = "<group>"; };
+		33ACD05822257EBA0051F2C9 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		33ACD05922257EBA0051F2C9 /* IntroInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroInteractor.swift; sourceTree = "<group>"; };
 		33C6CEB121DE1BDC00AA9E64 /* ShowCastModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCastModels.swift; sourceTree = "<group>"; };
 		33C6CEB221DE1BDC00AA9E64 /* ShowCastWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCastWorker.swift; sourceTree = "<group>"; };
 		33C6CEB321DE1BDC00AA9E64 /* ShowCastRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCastRouter.swift; sourceTree = "<group>"; };
@@ -196,6 +236,16 @@
 		33C6CECD21DF6D5200AA9E64 /* PresentCastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentCastViewController.swift; sourceTree = "<group>"; };
 		33C6CECE21DF6D5200AA9E64 /* PresentCastViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PresentCastViewController.storyboard; sourceTree = "<group>"; };
 		33C6CED321DF716100AA9E64 /* nordgrus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nordgrus.jpg; sourceTree = "<group>"; };
+		33C9CACE22414A0400D9B413 /* PickAreaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickAreaPresenter.swift; sourceTree = "<group>"; };
+		33C9CACF22414A0400D9B413 /* PickAreaWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickAreaWorker.swift; sourceTree = "<group>"; };
+		33C9CAD022414A0400D9B413 /* PickAreaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickAreaRouter.swift; sourceTree = "<group>"; };
+		33C9CAD122414A0400D9B413 /* PickAreaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PickAreaViewController.storyboard; sourceTree = "<group>"; };
+		33C9CAD222414A0400D9B413 /* PickAreaModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickAreaModels.swift; sourceTree = "<group>"; };
+		33C9CAD322414A0400D9B413 /* PickAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickAreaViewController.swift; sourceTree = "<group>"; };
+		33C9CAD422414A0400D9B413 /* PickAreaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickAreaInteractor.swift; sourceTree = "<group>"; };
+		33C9CADC2241841900D9B413 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Explore/Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
+		33C9CADF224184B800D9B413 /* pulse-effect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "pulse-effect.json"; sourceTree = "<group>"; };
+		33C9CAE1224186ED00D9B413 /* LottieButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieButton.swift; sourceTree = "<group>"; };
 		33DC7FCB21CBE36B00F5C736 /* ListCastsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCastsPresenter.swift; sourceTree = "<group>"; };
 		33DC7FCC21CBE36B00F5C736 /* ListCastsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCastsWorker.swift; sourceTree = "<group>"; };
 		33DC7FCD21CBE36B00F5C736 /* ListCastsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCastsRouter.swift; sourceTree = "<group>"; };
@@ -234,6 +284,7 @@
 				330A252021D38F4F0042B901 /* Alamofire.framework in Frameworks */,
 				330A251E21D38F4F0042B901 /* Serpent.framework in Frameworks */,
 				330A252121D38F4F0042B901 /* SnapKit.framework in Frameworks */,
+				33C9CADD2241841900D9B413 /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +294,7 @@
 		330A251921D38F350042B901 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				33C9CADC2241841900D9B413 /* Lottie.framework */,
 				33C6CEC621DF5BBD00AA9E64 /* Kingfisher.framework */,
 				330A251C21D38F4F0042B901 /* Alamofire.framework */,
 				330A251B21D38F4F0042B901 /* Cashier.framework */,
@@ -291,11 +343,11 @@
 		338D13E221C65F3F0065BB8D /* Explore */ = {
 			isa = PBXGroup;
 			children = (
-				33DC7FDE21CBE73E00F5C736 /* Misc */,
 				338D13F521C65F610065BB8D /* Models */,
 				338D13F721C65F850065BB8D /* Managers */,
 				338D13F921C660830065BB8D /* Repositories */,
 				338D13F621C65F6B0065BB8D /* Scenes */,
+				33DC7FDE21CBE73E00F5C736 /* Misc */,
 				338D13F821C65FC30065BB8D /* Resources */,
 				338D13E321C65F3F0065BB8D /* AppDelegate.swift */,
 				338D13EF21C65F410065BB8D /* Info.plist */,
@@ -317,13 +369,15 @@
 		338D13F621C65F6B0065BB8D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				33ACD05222257E940051F2C9 /* Intro */,
+				33C9CACD224149B500D9B413 /* PickArea */,
 				33C6CECA21DF6D5200AA9E64 /* PresentCast */,
 				33C6CEB021DE1BDC00AA9E64 /* ShowCast */,
 				330FE3D521DD2D9100AA3416 /* ShowDiscovery */,
-				33E1BAE821D27C45002E23AE /* Shared */,
 				33E1BAF221D27C88002E23AE /* MakeCast */,
 				33E1BAE021D27C45002E23AE /* Explore */,
 				33DC7FCA21CBE34600F5C736 /* ListCasts */,
+				33E1BAE821D27C45002E23AE /* Shared */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -341,10 +395,12 @@
 		338D13F821C65FC30065BB8D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				33C9CADE224184B800D9B413 /* Lottie */,
+				33ACD041222547390051F2C9 /* Fonts */,
 				33C6CEBF21DF491000AA9E64 /* Images */,
 				330FE3E921DD369400AA3416 /* GPX */,
-				330FE3EB21DD369400AA3416 /* nordgrus2018.xml */,
 				338D141221C673AC0065BB8D /* Sounds */,
+				330FE3EB21DD369400AA3416 /* nordgrus2018.xml */,
 				338D13EC21C65F410065BB8D /* LaunchScreen.storyboard */,
 				338D13EA21C65F410065BB8D /* Assets.xcassets */,
 			);
@@ -425,6 +481,35 @@
 			path = GyrstingeTest;
 			sourceTree = "<group>";
 		};
+		33ACD041222547390051F2C9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				33ACD046222547850051F2C9 /* CircularStd-Black.otf */,
+				33ACD042222547850051F2C9 /* CircularStd-BlackItalic.otf */,
+				33ACD045222547850051F2C9 /* CircularStd-Bold.otf */,
+				33ACD044222547850051F2C9 /* CircularStd-BoldItalic.otf */,
+				33ACD049222547860051F2C9 /* CircularStd-Book.otf */,
+				33ACD047222547850051F2C9 /* CircularStd-BookItalic.otf */,
+				33ACD048222547850051F2C9 /* CircularStd-Medium.otf */,
+				33ACD043222547850051F2C9 /* CircularStd-MediumItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		33ACD05222257E940051F2C9 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				33ACD05322257EBA0051F2C9 /* IntroPresenter.swift */,
+				33ACD05422257EBA0051F2C9 /* IntroWorker.swift */,
+				33ACD05522257EBA0051F2C9 /* IntroRouter.swift */,
+				33ACD05722257EBA0051F2C9 /* IntroModels.swift */,
+				33ACD05922257EBA0051F2C9 /* IntroInteractor.swift */,
+				33ACD05822257EBA0051F2C9 /* IntroViewController.swift */,
+				33ACD05622257EBA0051F2C9 /* IntroViewController.storyboard */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
 		33C6CEB021DE1BDC00AA9E64 /* ShowCast */ = {
 			isa = PBXGroup;
 			children = (
@@ -457,6 +542,28 @@
 				33C6CECD21DF6D5200AA9E64 /* PresentCastViewController.swift */,
 			);
 			path = PresentCast;
+			sourceTree = "<group>";
+		};
+		33C9CACD224149B500D9B413 /* PickArea */ = {
+			isa = PBXGroup;
+			children = (
+				33C9CACE22414A0400D9B413 /* PickAreaPresenter.swift */,
+				33C9CACF22414A0400D9B413 /* PickAreaWorker.swift */,
+				33C9CAD022414A0400D9B413 /* PickAreaRouter.swift */,
+				33C9CAD222414A0400D9B413 /* PickAreaModels.swift */,
+				33C9CAD422414A0400D9B413 /* PickAreaInteractor.swift */,
+				33C9CAD322414A0400D9B413 /* PickAreaViewController.swift */,
+				33C9CAD122414A0400D9B413 /* PickAreaViewController.storyboard */,
+			);
+			path = PickArea;
+			sourceTree = "<group>";
+		};
+		33C9CADE224184B800D9B413 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				33C9CADF224184B800D9B413 /* pulse-effect.json */,
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 		33DC7FCA21CBE34600F5C736 /* ListCasts */ = {
@@ -511,6 +618,7 @@
 			isa = PBXGroup;
 			children = (
 				33E1BAE921D27C45002E23AE /* MainTabBar.swift */,
+				33C9CAE1224186ED00D9B413 /* LottieButton.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -594,12 +702,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				33ACD03A221C4BA00051F2C9 /* gc1_dp7.m4a in Resources */,
+				33ACD04F222547860051F2C9 /* CircularStd-BookItalic.otf in Resources */,
 				3394EC57221AA77900730DF6 /* gyr_dp2.m4a in Resources */,
 				33ACD03F221C4BA00051F2C9 /* gc1_dp6.m4a in Resources */,
 				33ACD03D221C4BA00051F2C9 /* gc1_dp3.m4a in Resources */,
 				33DC7FDD21CBE46A00F5C736 /* CastCell.xib in Resources */,
 				33C6CED221DF6D5200AA9E64 /* PresentCastViewController.storyboard in Resources */,
 				33ACD029221C4BA00051F2C9 /* gc1_dp5.m4a in Resources */,
+				33ACD05D22257EBA0051F2C9 /* IntroViewController.storyboard in Resources */,
 				3394EC58221AA77900730DF6 /* gyr_dp3.m4a in Resources */,
 				33ACD036221C4BA00051F2C9 /* gc1_dp2.m4a in Resources */,
 				3394EC50221AA11600730DF6 /* gyrstingetestride.xml in Resources */,
@@ -609,13 +719,18 @@
 				338D141821C674110065BB8D /* pointC.m4a in Resources */,
 				33ACD02C221C4BA00051F2C9 /* gc1_s9.m4a in Resources */,
 				33ACD037221C4BA00051F2C9 /* gc1_s2.m4a in Resources */,
+				33ACD04B222547860051F2C9 /* CircularStd-MediumItalic.otf in Resources */,
 				33C6CED421DF716100AA9E64 /* nordgrus.jpg in Resources */,
 				330FE3ED21DD369400AA3416 /* nordgrus2018.xml in Resources */,
+				33ACD04A222547860051F2C9 /* CircularStd-BlackItalic.otf in Resources */,
 				3394EC67221ABF0A00730DF6 /* notification_sound_h.m4a in Resources */,
 				33ACD02E221C4BA00051F2C9 /* gc1_s12.m4a in Resources */,
 				33C6CEC521DF49D700AA9E64 /* veloropa.jpg in Resources */,
 				339C025321F4793F00A91C7A /* notification_sound.m4a in Resources */,
 				33C6CEC421DF49D700AA9E64 /* moeldrupvej.jpg in Resources */,
+				33ACD04D222547860051F2C9 /* CircularStd-Bold.otf in Resources */,
+				33C9CAE0224184B800D9B413 /* pulse-effect.json in Resources */,
+				33ACD04C222547860051F2C9 /* CircularStd-BoldItalic.otf in Resources */,
 				33E1BAEA21D27C45002E23AE /* ExploreViewController.storyboard in Resources */,
 				33ACD028221C4BA00051F2C9 /* gc1_s4.m4a in Resources */,
 				33C6CEBB21DE1BDC00AA9E64 /* ShowCastViewController.storyboard in Resources */,
@@ -627,16 +742,19 @@
 				33ACD035221C4BA00051F2C9 /* gc1_end.m4a in Resources */,
 				33ACD033221C4BA00051F2C9 /* gc1_welcome.m4a in Resources */,
 				338D13EE21C65F410065BB8D /* LaunchScreen.storyboard in Resources */,
+				33C9CAD822414A0400D9B413 /* PickAreaViewController.storyboard in Resources */,
 				33ACD02D221C4BA00051F2C9 /* gc1_s1.m4a in Resources */,
 				3394EC62221ABDDD00730DF6 /* gyr_dp3_h.m4a in Resources */,
 				330FE3EC21DD369400AA3416 /* nordgrus2018.xml in Resources */,
 				33ACD039221C4BA00051F2C9 /* gc1_s14.m4a in Resources */,
 				3394EC61221ABDDD00730DF6 /* gyr_dp1_h.m4a in Resources */,
 				33ACD02F221C4BA00051F2C9 /* gc1_s13.m4a in Resources */,
+				33ACD04E222547860051F2C9 /* CircularStd-Black.otf in Resources */,
 				33ACD034221C4BA00051F2C9 /* gc1_s7.m4a in Resources */,
 				33DC7FD521CBE36B00F5C736 /* ListCastsViewController.storyboard in Resources */,
 				3394EC59221AA77900730DF6 /* gyr_dp1.m4a in Resources */,
 				33ACD032221C4BA00051F2C9 /* gc1_s11.m4a in Resources */,
+				33ACD051222547860051F2C9 /* CircularStd-Book.otf in Resources */,
 				33C6CEC321DF49D700AA9E64 /* graapilevej.jpg in Resources */,
 				330FE3D921DD2E1700AA3416 /* ShowDiscoveryViewController.storyboard in Resources */,
 				33ACD02A221C4BA00051F2C9 /* gc1_s3.m4a in Resources */,
@@ -646,6 +764,7 @@
 				33ACD03C221C4BA00051F2C9 /* gc1_s16.m4a in Resources */,
 				338D13EB21C65F410065BB8D /* Assets.xcassets in Resources */,
 				33ACD030221C4BA00051F2C9 /* gc1_s6.m4a in Resources */,
+				33ACD050222547860051F2C9 /* CircularStd-Medium.otf in Resources */,
 				3394EC5B221AA77900730DF6 /* gyr_dp5.m4a in Resources */,
 				33ACD03E221C4BA00051F2C9 /* gc1_s15.m4a in Resources */,
 				3394EC63221ABDDD00730DF6 /* gyr_dp2_h.m4a in Resources */,
@@ -669,6 +788,7 @@
 				"$(SRCROOT)/Explore/Carthage/Build/iOS/Cashier.framework",
 				"$(SRCROOT)/Explore/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Explore/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Explore/Carthage/Build/iOS/Lottie.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -679,6 +799,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Cashier.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -691,25 +812,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33ACD05B22257EBA0051F2C9 /* IntroWorker.swift in Sources */,
 				33E1BAED21D27C45002E23AE /* ExploreWorker.swift in Sources */,
+				33C9CAE2224186ED00D9B413 /* LottieButton.swift in Sources */,
 				33EF343921D23B1C0019F64E /* Colors.swift in Sources */,
 				338D13E421C65F3F0065BB8D /* AppDelegate.swift in Sources */,
 				330FE3D721DD2DF200AA3416 /* ShowDiscoveryViewController.swift in Sources */,
 				338D13FB21C660B70065BB8D /* Repository.swift in Sources */,
+				33ACD06022257EBA0051F2C9 /* IntroInteractor.swift in Sources */,
 				338D140B21C66A800065BB8D /* MockRepository.swift in Sources */,
 				33E1BAEC21D27C45002E23AE /* ExploreInteractor.swift in Sources */,
+				33C9CADB22414A0400D9B413 /* PickAreaInteractor.swift in Sources */,
 				33E1BAF021D27C45002E23AE /* ExplorePresenter.swift in Sources */,
 				330A251821D38D9D0042B901 /* Constants.swift in Sources */,
 				33E1BAEE21D27C45002E23AE /* ExploreRouter.swift in Sources */,
+				33C9CAD722414A0400D9B413 /* PickAreaRouter.swift in Sources */,
 				33DC7FDC21CBE46A00F5C736 /* CastCell.swift in Sources */,
 				338D140D21C66AF10065BB8D /* Cast.swift in Sources */,
 				33DC7FD621CBE36B00F5C736 /* ListCastsModels.swift in Sources */,
 				33E1BAFA21D27CB1002E23AE /* MakeCastPresenter.swift in Sources */,
+				33ACD05F22257EBA0051F2C9 /* IntroViewController.swift in Sources */,
+				33ACD05C22257EBA0051F2C9 /* IntroRouter.swift in Sources */,
 				33E1BAEB21D27C45002E23AE /* ExploreViewController.swift in Sources */,
 				33C6CEBD21DE1BDC00AA9E64 /* ShowCastPresenter.swift in Sources */,
 				33DC7FD321CBE36B00F5C736 /* ListCastsWorker.swift in Sources */,
 				339C025121F4737900A91C7A /* NotificationManager.swift in Sources */,
 				33E1BAEF21D27C45002E23AE /* ExploreModels.swift in Sources */,
+				33ACD05E22257EBA0051F2C9 /* IntroModels.swift in Sources */,
 				33C6CEBE21DE1BDC00AA9E64 /* ShowCastInteractor.swift in Sources */,
 				33E1BAFF21D27CB1002E23AE /* MakeCastViewController.swift in Sources */,
 				33E1BAFE21D27CB1002E23AE /* MakeCastModels.swift in Sources */,
@@ -718,22 +847,27 @@
 				33DC7FD721CBE36B00F5C736 /* ListCastsViewController.swift in Sources */,
 				33E1BB0021D27CB1002E23AE /* MakeCastInteractor.swift in Sources */,
 				33E1BAFB21D27CB1002E23AE /* MakeCastWorker.swift in Sources */,
+				33C9CAD622414A0400D9B413 /* PickAreaWorker.swift in Sources */,
 				33E1BAF121D27C45002E23AE /* MainTabBar.swift in Sources */,
 				33C6CEBA21DE1BDC00AA9E64 /* ShowCastRouter.swift in Sources */,
 				338D140F21C66EE50065BB8D /* Discovery.swift in Sources */,
 				33C6CEBC21DE1BDC00AA9E64 /* ShowCastViewController.swift in Sources */,
 				33C6CEB921DE1BDC00AA9E64 /* ShowCastWorker.swift in Sources */,
 				33DC7FE021CBE75200F5C736 /* Extensions.swift in Sources */,
+				33C9CADA22414A0400D9B413 /* PickAreaViewController.swift in Sources */,
 				338D141121C6707A0065BB8D /* SoundClip.swift in Sources */,
 				330A251621D38D650042B901 /* StravaServerRepository.swift in Sources */,
 				33DC7FD421CBE36B00F5C736 /* ListCastsRouter.swift in Sources */,
+				33C9CAD922414A0400D9B413 /* PickAreaModels.swift in Sources */,
 				330A252421D39F920042B901 /* StravaRoute.swift in Sources */,
+				33C9CAD522414A0400D9B413 /* PickAreaPresenter.swift in Sources */,
 				339C024F21F467AA00A91C7A /* AudioManager.swift in Sources */,
 				33DC7FD221CBE36B00F5C736 /* ListCastsPresenter.swift in Sources */,
 				33C6CEB821DE1BDC00AA9E64 /* ShowCastModels.swift in Sources */,
 				33DC7FD821CBE36B00F5C736 /* ListCastsInteractor.swift in Sources */,
 				330A251421D38A750042B901 /* ServerRepository.swift in Sources */,
 				338D141A21C739830065BB8D /* LocationManager.swift in Sources */,
+				33ACD05A22257EBA0051F2C9 /* IntroPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

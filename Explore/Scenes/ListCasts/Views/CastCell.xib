@@ -8,6 +8,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Book.otf">
+            <string>CircularStd-Book</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -22,25 +27,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="96.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXQ-Dr-575">
-                                <rect key="frame" x="10" y="7" width="58" height="31.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
-                                <color key="textColor" red="0.32156862745098036" green="0.97647058823529409" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="10" y="7" width="49.5" height="25.5"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="20"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKN-ZC-aZI">
-                                <rect key="frame" x="10" y="40.5" width="37" height="18"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
-                                <color key="textColor" red="0.32156862749999998" green="0.97647058819999999" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="10" y="34.5" width="42" height="22"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83G-uP-ItK">
-                                <rect key="frame" x="10" y="60.5" width="37" height="18"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
-                                <color key="textColor" red="0.32156862749999998" green="0.97647058819999999" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="10" y="58.5" width="42" height="22"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.050000000000000003" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="83G-uP-ItK" firstAttribute="top" secondItem="fKN-ZC-aZI" secondAttribute="bottom" constant="2" id="1RH-sg-VBt"/>
                             <constraint firstItem="83G-uP-ItK" firstAttribute="leading" secondItem="fKN-ZC-aZI" secondAttribute="leading" id="90p-tL-7sp"/>

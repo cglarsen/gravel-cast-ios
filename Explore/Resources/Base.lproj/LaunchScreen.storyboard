@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,19 +14,38 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="ia5-Bp-JOy">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBQ-oF-bL4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="896"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoWhite" translatesAutoresizingMaskIntoConstraints="NO" id="uOM-Nh-gth">
+                                        <rect key="frame" x="53" y="382" width="308" height="132"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="uOM-Nh-gth" firstAttribute="centerY" secondItem="UBQ-oF-bL4" secondAttribute="centerY" id="5xI-eN-ibf"/>
+                                    <constraint firstItem="uOM-Nh-gth" firstAttribute="centerX" secondItem="UBQ-oF-bL4" secondAttribute="centerX" id="8hc-sM-5Vd"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trees4" translatesAutoresizingMaskIntoConstraints="NO" id="kHD-v7-Q7S">
+                                <rect key="frame" x="-145" y="563" width="704" height="333"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kHD-v7-Q7S" secondAttribute="height" multiplier="740:350" id="qJa-8D-qVB"/>
+                                </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.70588235294117641" green="0.52549019607843139" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="ia5-Bp-JOy" secondAttribute="bottom" id="3vW-Uf-gUx"/>
-                            <constraint firstItem="ia5-Bp-JOy" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="6QW-Rv-X3J"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ia5-Bp-JOy" secondAttribute="trailing" id="C9z-vf-6uj"/>
-                            <constraint firstItem="ia5-Bp-JOy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pVp-Be-Kfa"/>
+                            <constraint firstItem="kHD-v7-Q7S" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4P8-rE-OE8"/>
+                            <constraint firstItem="kHD-v7-Q7S" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="1.7" id="6cn-bn-d85"/>
+                            <constraint firstItem="UBQ-oF-bL4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WcN-9S-yRE"/>
+                            <constraint firstItem="UBQ-oF-bL4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e44-Yi-hwI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UBQ-oF-bL4" secondAttribute="trailing" id="gSS-ts-D4c"/>
+                            <constraint firstItem="UBQ-oF-bL4" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="gaC-XP-uRe"/>
+                            <constraint firstAttribute="bottom" secondItem="kHD-v7-Q7S" secondAttribute="bottom" id="qI3-NL-E5j"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,6 +56,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splash" width="1244" height="2208"/>
+        <image name="logoWhite" width="308" height="132.66667175292969"/>
+        <image name="trees4" width="740" height="350"/>
     </resources>
 </document>
