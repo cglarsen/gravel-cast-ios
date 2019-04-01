@@ -23,7 +23,7 @@ class PickAreaViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var worldOutlineImageView: UIImageView!
     @IBOutlet weak var nsButton: LottieButton!
-    
+   
     // MARK: - Properties
     var interactor: PickAreaBusinessLogic?
     var router: (NSObjectProtocol & PickAreaRoutingLogic & PickAreaDataPassing)?
